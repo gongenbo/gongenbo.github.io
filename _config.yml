@@ -1,16 +1,16 @@
-title: overtrue | 安正超博客
-name: overtrue
-email: anzhengchao@gmail.com
-description: 安正超(overtrue)，PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/overtrue。
-keywords: Laravel,Laravel教程,Laravel安装,Laravel视频,安正超,PHP,overtrue,Pinyin,汉字转拼音
-skill_keywords: [PHP, Javascript, HTML+CSS, Swift, Linux, Laravel, Git, Mac, RESTful, Stackoverflow, Sublime Text, OmniGaffale, OmniPlan]
+title: gongenbo | 巩恩伯的博客
+name: gongenbo
+email: gongenbo@gmail.com
+description: 巩恩伯，数据开发工程师，从事大数据相关的开发工作。开源爱好者，GitHub:https://github.com/gongenbo。
+keywords: 巩恩伯,大星,gongenbo,bigstar
+skill_keywords: [hadoop,spark,java,scala,python]
 
 timezone:    PRC
 encoding: "utf-8"
 
-url: https://gongenbo.github.io/
+url: http://www.gongenbo.com
 baseurl:  "/"
-domain:    overtrue.me
+domain:    www.gongenbo.com
 permalink:     /articles/:year/:month/:title.html
 paginate_path: 'page:num'
 paginate:   10
