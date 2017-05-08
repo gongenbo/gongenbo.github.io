@@ -1,0 +1,83 @@
+title: overtrue | 安正超博客
+name: overtrue
+email: anzhengchao@gmail.com
+description: 安正超(overtrue)，PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/overtrue。
+keywords: Laravel,Laravel教程,Laravel安装,Laravel视频,安正超,PHP,overtrue,Pinyin,汉字转拼音
+skill_keywords: [PHP, Javascript, HTML+CSS, Swift, Linux, Laravel, Git, Mac, RESTful, Stackoverflow, Sublime Text, OmniGaffale, OmniPlan]
+
+timezone:    PRC
+encoding: "utf-8"
+
+url: https://gongenbo.github.io/
+baseurl:  "/"
+domain:    overtrue.me
+permalink:     /articles/:year/:month/:title.html
+paginate_path: 'page:num'
+paginate:   10
+source_code: https://github.com/gongenbo/gongenbo
+
+# Build settings
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+markdown:    kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  line_numbers: true
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
+
+disqus:
+  id: overtrueme
+
+google:
+    analytics_id: UA-55452630-1
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: https://github.com/overtrue
+    label: GitHub
+    target: _blank
+
+  -
+    href: http://weibo.com/44294631
+    label: Weibo
+    target: _blank
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+public_repositories: []
+popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
+contribute_repos: ['overtrue/wechat', 'EasyWeChat/site', 'laravel/framework', 'caouecs/Laravel-lang']
