@@ -1,6 +1,7 @@
-_site
-.sass-cache
-node_modules
-/vendor
+_site/
+*.swp
+*.~vsd
+\#*\#
+*~
 .DS_Store
-bower_components
+Gemfile.lock

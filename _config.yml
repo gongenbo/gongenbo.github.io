@@ -1,83 +1,102 @@
-title: 巩恩伯的博客 | gongenbo
-name: 巩恩伯
-email: gongenbo@gmail.com
-description: 巩恩伯，数据开发工程师，从事大数据相关的开发工作。开源爱好者，GitHub:https://github.com/gongenbo。
-keywords: 巩恩伯,大星,gongenbo,bigstar
-skill_keywords: [hadoop,spark,java,scala,python]
-
-timezone:    PRC
-encoding: "utf-8"
-
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:"/"
 url: http://www.gongenbo.com
-baseurl:  "/"
-domain:    www.gongenbo.com
-permalink:     /articles/:year/:month/:title.html
-paginate_path: 'page:num'
-paginate:   10
-source_code: https://github.com/gongenbo/gongenbo
+date_format: "ordinal"
+title: 巩恩伯
+subtitle: "Make the impossible possible, the possible easy and the easy elegant"
+description: "巩恩伯的个人博客"
+keywords: 巩恩伯
+favicon: /favicon.ico
+timezone: Asia/BeiJing
+encoding: "utf-8"
+source_code: https://github.com/gongenbo/gongenbo.github.io
+side_bar_repo_limit: 5
 
-# Build settings
-lsi:         false
-excerpt_separator: "\n\n"
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: 巩恩伯
+organization: LeTV
+location: BeiJing, China
+email: gongenbo@gmail.com
 
-source:      .
-destination: ./_site
-
-quiet:    false
-defaults: []
-
-markdown:    kramdown
-highlighter: rouge
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-  line_numbers: true
-
-gems:
-  - jemoji
-  - jekyll-sitemap
-  - jekyll-paginate
-
-disqus:
-  id: overtrueme
-
-google:
-    analytics_id: UA-55452630-1
-
-# navigation
+# ---------------- #
+#    Navigation    #
+# ---------------- #
 navs:
   -
     href: /
-    label: Home
+    label: 首页
 
   -
-    href: /open-source
-    label: Open-Source
+    href: /categories/
+    label: 分类
 
   -
-    href: https://github.com/overtrue
-    label: GitHub
-    target: _blank
+    href: /MySkillTree/
+    label: 我的技能树
 
   -
-    href: http://weibo.com/44294631
-    label: Weibo
-    target: _blank
+    href: /about/
+    label: 关于我
 
-  -
-    href: /bookmark
-    label: Bookmark
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
 
-  -
-    href: /about
-    label: About
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-public_repositories: []
-popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
-contribute_repos: ['overtrue/wechat', 'EasyWeChat/site', 'laravel/framework', 'caouecs/Laravel-lang']
+# ---------------- #
+#      Socials     #
+# ---------------- #
+github_username: gongenbo
+facebook_username: gongenbo
+weibo_username: enbogong
+zhihu_username: gongenbo
+twitter_username: gongenbo
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, changyan
+comments_provider: disqus
+# !!!重要!!! 请修改下面用户名为你自己申请的
+disqus_username: izhangzhihao-github-io
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-82434482-1
+
+# ---------------- #
+#      Datas       #
+# ---------------- #
+skill_language_keywords: [Java, Scala, C Sharp, Python]
+skill_web_app_keywords: [javaEE, Spring ,Spring MVC ,JPA , Hibernate , MyBatis, Shiro ,Redis ,Spring Data ,MySql ,ASP.NET ,ASP.NET MVC,Entity Framework]

@@ -1,0 +1,83 @@
+title: 巩恩伯的博客 | gongenbo
+name: 巩恩伯
+email: gongenbo@gmail.com
+description: 巩恩伯，数据开发工程师，从事大数据相关的开发工作。开源爱好者，GitHub:https://github.com/gongenbo。
+keywords: 巩恩伯,大星,gongenbo,bigstar
+skill_keywords: [hadoop,spark,java,scala,python]
+
+timezone:    PRC
+encoding: "utf-8"
+
+url: http://www.gongenbo.com
+baseurl:  "/"
+domain:    www.gongenbo.com
+permalink:     /articles/:year/:month/:title.html
+paginate_path: 'page:num'
+paginate:   10
+source_code: https://github.com/gongenbo/gongenbo
+
+# Build settings
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+markdown:    kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  line_numbers: true
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
+
+disqus:
+  id: overtrueme
+
+google:
+    analytics_id: UA-55452630-1
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: https://github.com/overtrue
+    label: GitHub
+    target: _blank
+
+  -
+    href: http://weibo.com/44294631
+    label: Weibo
+    target: _blank
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+public_repositories: []
+popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
+contribute_repos: ['overtrue/wechat', 'EasyWeChat/site', 'laravel/framework', 'caouecs/Laravel-lang']
