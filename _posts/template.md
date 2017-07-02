@@ -1,12 +1,12 @@
 ---
 layout: post
 title: template page
-categories: [cate1, cate2]
+categories: [算法, 算法]
 description: some word here
 keywords: keyword1, keyword2
 ---
-
-## 目录wiki
+# 一个#标 题
+## 两个#目录wiki
 ### 1. 二级目录
 ### 2. 二级目录
 ### 3. 二级目录
