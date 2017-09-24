@@ -3,7 +3,7 @@ layout: post
 title: Maven实战--- dependencies与dependencyManagement
 categories: Linux
 description: Maven实战--- dependencies与dependencyManagement的区别
-keywords: sort, uniq
+keywords: maven, dependencyManagement
 ---
 ## 1、DepencyManagement应用场景
 当我们的项目模块很多的时候，我们使用Maven管理项目非常方便，帮助我们管理构建、文档、报告、依赖、scms、发布、分发的方法。可以方便的编译代码、进行依赖管理、管理二进制库等等。
@@ -14,6 +14,7 @@ keywords: sort, uniq
  
 来看看我们项目中的应用：
                                                                                               pom继承关系图：
+                                                                                              
 ![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/linux/20170924_mvn.jpeg)    
 
 Itoo-base-parent(pom.xml)
