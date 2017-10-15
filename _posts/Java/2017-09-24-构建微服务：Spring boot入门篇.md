@@ -5,11 +5,11 @@ categories: Linux
 description: 构建微服务：Spring boot入门篇
 keywords: Spring boot, 微服务
 ---
-## 1. 什么是spring boot
+## 什么是spring boot
 
 Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。它可以脱离tomcat等外部容器直接运行，快速构建微服务(比如短信服务、邮件服务)。
 
-## 2. 使用spring boot有什么好处
+## 使用spring boot有什么好处
 
 平时如果我们需要搭建一个spring web项目的时候需要怎么做呢？
 
@@ -27,8 +27,8 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 但是如果使用spring boot呢？
 很简单，我仅仅只需要非常少的几个配置就可以迅速方便的搭建起来一套web项目或者是构建一个微服务！
 
-## 3. 快速入门
-### 3.1 maven构建项目
+## 快速入门
+### maven构建项目
 
 1、访问http://start.spring.io/
 
@@ -134,9 +134,9 @@ maven pom依赖
 5、 将项目打成jar包
  `mvn package`
  
-## 4、 运行项目
+## 运行项目
 
-### 4.1 方法一：独立运行(不依赖tomcat容器) 
+### 方法一：独立运行(不依赖tomcat容器) 
 运行： `java -jar  springboot-demo-0.0.1-SNAPSHOT.jar`
 
 测试：
@@ -149,7 +149,7 @@ maven pom依赖
 返回`hello word!!`代表请求成功
 
 
-### 4.2 方法二：在tomcat中运行
+### 方法二：在tomcat中运行
 把spring-boot项目按照平常的web项目一样发布到tomcat容器下
 
 一、修改打包形式
@@ -240,10 +240,10 @@ http://localhost:8080/springboot-demo-0.0.1-SNAPSHOT/hello
 方法二：直接在服务器使用curl请求：`http://localhost:8080/springboot-demo-0.0.1-SNAPSHOT/hello`
 
 
-项目地址：https://gitee.com/gongenbo/springboot-demo
+项目地址：[https://gitee.com/gongenbo/springboot-demo](https://gitee.com/gongenbo/springboot-demo)
 
-## 5、其他
-### 5.1 修改spring boot默认的8080端口为其它端口
+## 其他
+### 修改spring boot默认的8080端口为其它端口
 
 方法一：可以通过实现EmbeddedServletContainerCustomizer接口来实现，代码：
 
