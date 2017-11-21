@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://www.gongenbo.com
+url: http://gongenbo.com
 date_format: "ordinal"
 title: 巩恩伯
 subtitle: "Make the impossible possible, the possible easy and the easy elegant"
