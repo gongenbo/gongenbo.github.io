@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://gongenbo.com
+url: https://gongenbo.com
 date_format: "ordinal"
 title: 巩恩伯
 subtitle: "Make the impossible possible, the possible easy and the easy elegant"
@@ -86,7 +86,7 @@ twitter_username: gongenbo
 # support provider: disqus, changyan
 comments_provider: disqus
 # !!!重要!!! 请修改下面用户名为你自己申请的
-disqus_username: izhangzhihao-github-io
+disqus_username: gongenbo-github-io
 
 # ---------------- #
 #    Analytics     #
