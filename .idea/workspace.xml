@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c262689-8139-4a88-b543-02cde946dfc6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/面试/2018-04-08-面试题.md" afterPath="$PROJECT_DIR$/_posts/面试/2018-04-08-面试题.md" />
     </list>
     <ignored path="gongenbo.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +102,33 @@
         <entry file="file://$PROJECT_DIR$/_posts/kafka/2017-07-16-探讨kafka的分区数与单线程多线程消费.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="441">
+              <first_editor relative-caret-position="3510">
                 <caret line="234" column="1" lean-forward="false" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-16-Mac下安装mysql.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="171">
+                <caret line="65" column="10" lean-forward="false" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -117,44 +141,71 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CNAME">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-10-16-Mac下安装mysql.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="291">
-                <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="2" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config_bak2.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config_bak2.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="375">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding>
+                <marker date="1539917834000" expanded="true" signature="77:84" ph="http://www.gongenbo." />
+                <marker date="1539917834000" expanded="true" signature="116:125" ph="ordinal" />
+                <marker date="1539917834000" expanded="true" signature="133:136" ph="巩恩伯" />
+                <marker date="1539917834000" expanded="true" signature="147:217" ph="Make the …sy elegant" />
+                <marker date="1539917834000" expanded="true" signature="231:241" ph="巩恩伯的个人博客" />
+                <marker date="1539917834000" expanded="true" signature="252:255" ph="巩恩伯" />
+                <marker date="1539917834000" expanded="true" signature="265:277" ph="/favicon.ico" />
+                <marker date="1539917834000" expanded="true" signature="288:300" ph="Asia/BeiJing" />
+                <marker date="1539917834000" expanded="true" signature="311:318" ph="utf-8" />
+                <marker date="1539917834000" expanded="true" signature="332:378" ph="https://g….github.io" />
+                <marker date="1539917834000" expanded="true" signature="474:477" ph="巩恩伯" />
+                <marker date="1539917834000" expanded="true" signature="488:502" ph="BeiJing, China" />
+                <marker date="1539917834000" expanded="true" signature="510:528" ph="gongenbo@gmail.com" />
+                <marker date="1539917834000" expanded="true" signature="593:754" ph="navs: &lt;4 items&gt;" />
+                <marker date="1539917834000" expanded="true" signature="626:628" ph="首页" />
+                <marker date="1539917834000" expanded="true" signature="644:656" ph="/categories/" />
+                <marker date="1539917834000" expanded="true" signature="668:670" ph="分类" />
+                <marker date="1539917834000" expanded="true" signature="686:699" ph="/MySkillTree/" />
+                <marker date="1539917834000" expanded="true" signature="711:716" ph="我的技能树" />
+                <marker date="1539917834000" expanded="true" signature="732:739" ph="/about/" />
+                <marker date="1539917834000" expanded="true" signature="751:754" ph="关于我" />
+                <marker date="1539917834000" expanded="true" signature="834:843" ph="/feed.xml" />
+                <marker date="1539917834000" expanded="true" signature="918:926" ph="kramdown" />
+                <marker date="1539917834000" expanded="true" signature="927:951" ph="kramdown: &lt;1 key&gt;" />
+                <marker date="1539917834000" expanded="true" signature="948:951" ph="GFM" />
+                <marker date="1539917834000" expanded="true" signature="965:970" ph="rouge" />
+                <marker date="1539917834000" expanded="true" signature="988:993" ph="false" />
+                <marker date="1539917834000" expanded="true" signature="1001:1006" ph="false" />
+                <marker date="1539917834000" expanded="true" signature="1026:1032" ph="&#10;&#10;" />
+                <marker date="1539917834000" expanded="true" signature="1044:1070" ph="/:year/:m…ay/:title/" />
+                <marker date="1539917834000" expanded="true" signature="1071:1191" ph="gems: &lt;5 items&gt;" />
+                <marker date="1539917834000" expanded="true" signature="1083:1088" ph="rouge" />
+                <marker date="1539917834000" expanded="true" signature="1124:1139" ph="jekyll-paginate" />
+                <marker date="1539917834000" expanded="true" signature="1146:1160" ph="jekyll-sitemap" />
+                <marker date="1539917834000" expanded="true" signature="1167:1178" ph="jekyll-feed" />
+                <marker date="1539917834000" expanded="true" signature="1185:1191" ph="jemoji" />
+                <marker date="1539917834000" expanded="true" signature="1216:1291" ph="collections: &lt;1 key&gt;" />
+                <marker date="1539917834000" expanded="true" signature="1233:1291" ph="wiki: &lt;2 keys&gt;" />
+                <marker date="1539917834000" expanded="true" signature="1255:1259" ph="true" />
+                <marker date="1539917834000" expanded="true" signature="1279:1291" ph="/wiki/:path/" />
+                <marker date="1539917834000" expanded="true" signature="1373:1381" ph="gongenbo" />
+                <marker date="1539917834000" expanded="true" signature="1401:1409" ph="gongenbo" />
+                <marker date="1539917834000" expanded="true" signature="1426:1434" ph="enbogong" />
+                <marker date="1539917834000" expanded="true" signature="1451:1459" ph="gongenbo" />
+                <marker date="1539917834000" expanded="true" signature="1478:1486" ph="gongenbo" />
+                <marker date="1539917834000" expanded="true" signature="1607:1613" ph="disqus" />
+                <marker date="1539917834000" expanded="true" signature="1658:1676" ph="gongenbo-github-io" />
+                <marker date="1539917834000" expanded="true" signature="1741:1781" ph="google: &lt;1 key&gt;" />
+                <marker date="1539917834000" expanded="true" signature="1767:1781" ph="UA-82434482-1有" />
+                <marker date="1539917834000" expanded="true" signature="1846:1892" ph="skill_lan…e_keywords: [3 items]" />
+                <marker date="1539917834000" expanded="true" signature="1872:1876" ph="Java" />
+                <marker date="1539917834000" expanded="true" signature="1878:1883" ph="Scala" />
+                <marker date="1539917834000" expanded="true" signature="1885:1891" ph="Python" />
+                <marker date="1539917834000" expanded="true" signature="1893:1974" ph="skill_dat…e_keywords: [7 items]" />
+                <marker date="1539917834000" expanded="true" signature="1923:1929" ph="Hadoop" />
+                <marker date="1539917834000" expanded="true" signature="1931:1935" ph="Hive" />
+                <marker date="1539917834000" expanded="true" signature="1937:1942" ph="Kafka" />
+                <marker date="1539917834000" expanded="true" signature="1944:1949" ph="Hbase" />
+                <marker date="1539917834000" expanded="true" signature="1951:1959" ph="Zeppelin" />
+                <marker date="1539917834000" expanded="true" signature="1961:1966" ph="Spark" />
+                <marker date="1539917834000" expanded="true" signature="1968:1973" ph="Redis" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +228,9 @@
         <option value="$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
         <option value="$PROJECT_DIR$/_posts/Java/2017-05-10-网络通讯高效序列化类.md" />
         <option value="$PROJECT_DIR$/_posts/kafka/2017-07-16-探讨kafka的分区数与单线程多线程消费.md" />
+        <option value="$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/CNAME" />
-        <option value="$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md" />
       </list>
     </option>
   </component>
@@ -271,9 +322,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,6 +460,26 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -596,6 +667,53 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -676,6 +794,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="gongenbo.github.io" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -697,6 +828,42 @@
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gongenbo.github.io" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
@@ -749,6 +916,7 @@
       <workItem from="1500208302063" duration="5998000" />
       <workItem from="1511261288194" duration="440000" />
       <workItem from="1525942198493" duration="2295000" />
+      <workItem from="1539915444760" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="change style">
       <created>1494296533719</created>
@@ -859,10 +1027,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29712000" />
+    <option name="totallyTimeSpent" value="31182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="730" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="730" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -874,12 +1042,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21082391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21405493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -890,7 +1059,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1002,7 +1170,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
     <entry file="file://$PROJECT_DIR$/_posts/算法/2017-07-02-二叉树的遍历.md" />
     <entry file="file://$PROJECT_DIR$/_posts/kafka/2017-07-16-探讨kafka的分区数与单线程多线程消费.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1011,7 +1179,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/template.md" />
     <entry file="file://$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1020,7 +1188,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/template.md" />
     <entry file="file://$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1029,7 +1197,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/template.md" />
     <entry file="file://$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1037,7 +1205,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/template.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1046,14 +1214,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/template.md" />
     <entry file="file://$PROJECT_DIR$/_posts/随想/2017-05-10-北漂岁月.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1136,7 +1304,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/kafka/2017-07-16-探讨kafka的分区数与单线程多线程消费.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="441">
+          <first_editor relative-caret-position="3510">
             <caret line="234" column="1" lean-forward="false" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
             <folding />
           </first_editor>
@@ -1146,11 +1314,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config_bak2.yml">
+    <entry file="file://$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="65" column="10" lean-forward="false" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config_bak.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="43" />
+        <state relative-caret-position="398">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <marker date="1539917834000" expanded="true" signature="77:84" ph="http://www.gongenbo." />
+            <marker date="1539917834000" expanded="true" signature="116:125" ph="ordinal" />
+            <marker date="1539917834000" expanded="true" signature="133:136" ph="巩恩伯" />
+            <marker date="1539917834000" expanded="true" signature="147:217" ph="Make the …sy elegant" />
+            <marker date="1539917834000" expanded="true" signature="231:241" ph="巩恩伯的个人博客" />
+            <marker date="1539917834000" expanded="true" signature="252:255" ph="巩恩伯" />
+            <marker date="1539917834000" expanded="true" signature="265:277" ph="/favicon.ico" />
+            <marker date="1539917834000" expanded="true" signature="288:300" ph="Asia/BeiJing" />
+            <marker date="1539917834000" expanded="true" signature="311:318" ph="utf-8" />
+            <marker date="1539917834000" expanded="true" signature="332:378" ph="https://g….github.io" />
+            <marker date="1539917834000" expanded="true" signature="474:477" ph="巩恩伯" />
+            <marker date="1539917834000" expanded="true" signature="488:502" ph="BeiJing, China" />
+            <marker date="1539917834000" expanded="true" signature="510:528" ph="gongenbo@gmail.com" />
+            <marker date="1539917834000" expanded="true" signature="593:754" ph="navs: &lt;4 items&gt;" />
+            <marker date="1539917834000" expanded="true" signature="626:628" ph="首页" />
+            <marker date="1539917834000" expanded="true" signature="644:656" ph="/categories/" />
+            <marker date="1539917834000" expanded="true" signature="668:670" ph="分类" />
+            <marker date="1539917834000" expanded="true" signature="686:699" ph="/MySkillTree/" />
+            <marker date="1539917834000" expanded="true" signature="711:716" ph="我的技能树" />
+            <marker date="1539917834000" expanded="true" signature="732:739" ph="/about/" />
+            <marker date="1539917834000" expanded="true" signature="751:754" ph="关于我" />
+            <marker date="1539917834000" expanded="true" signature="834:843" ph="/feed.xml" />
+            <marker date="1539917834000" expanded="true" signature="918:926" ph="kramdown" />
+            <marker date="1539917834000" expanded="true" signature="927:951" ph="kramdown: &lt;1 key&gt;" />
+            <marker date="1539917834000" expanded="true" signature="948:951" ph="GFM" />
+            <marker date="1539917834000" expanded="true" signature="965:970" ph="rouge" />
+            <marker date="1539917834000" expanded="true" signature="988:993" ph="false" />
+            <marker date="1539917834000" expanded="true" signature="1001:1006" ph="false" />
+            <marker date="1539917834000" expanded="true" signature="1026:1032" ph="&#10;&#10;" />
+            <marker date="1539917834000" expanded="true" signature="1044:1070" ph="/:year/:m…ay/:title/" />
+            <marker date="1539917834000" expanded="true" signature="1071:1191" ph="gems: &lt;5 items&gt;" />
+            <marker date="1539917834000" expanded="true" signature="1083:1088" ph="rouge" />
+            <marker date="1539917834000" expanded="true" signature="1124:1139" ph="jekyll-paginate" />
+            <marker date="1539917834000" expanded="true" signature="1146:1160" ph="jekyll-sitemap" />
+            <marker date="1539917834000" expanded="true" signature="1167:1178" ph="jekyll-feed" />
+            <marker date="1539917834000" expanded="true" signature="1185:1191" ph="jemoji" />
+            <marker date="1539917834000" expanded="true" signature="1216:1291" ph="collections: &lt;1 key&gt;" />
+            <marker date="1539917834000" expanded="true" signature="1233:1291" ph="wiki: &lt;2 keys&gt;" />
+            <marker date="1539917834000" expanded="true" signature="1255:1259" ph="true" />
+            <marker date="1539917834000" expanded="true" signature="1279:1291" ph="/wiki/:path/" />
+            <marker date="1539917834000" expanded="true" signature="1373:1381" ph="gongenbo" />
+            <marker date="1539917834000" expanded="true" signature="1401:1409" ph="gongenbo" />
+            <marker date="1539917834000" expanded="true" signature="1426:1434" ph="enbogong" />
+            <marker date="1539917834000" expanded="true" signature="1451:1459" ph="gongenbo" />
+            <marker date="1539917834000" expanded="true" signature="1478:1486" ph="gongenbo" />
+            <marker date="1539917834000" expanded="true" signature="1607:1613" ph="disqus" />
+            <marker date="1539917834000" expanded="true" signature="1658:1676" ph="gongenbo-github-io" />
+            <marker date="1539917834000" expanded="true" signature="1741:1781" ph="google: &lt;1 key&gt;" />
+            <marker date="1539917834000" expanded="true" signature="1767:1781" ph="UA-82434482-1有" />
+            <marker date="1539917834000" expanded="true" signature="1846:1892" ph="skill_lan…e_keywords: [3 items]" />
+            <marker date="1539917834000" expanded="true" signature="1872:1876" ph="Java" />
+            <marker date="1539917834000" expanded="true" signature="1878:1883" ph="Scala" />
+            <marker date="1539917834000" expanded="true" signature="1885:1891" ph="Python" />
+            <marker date="1539917834000" expanded="true" signature="1893:1974" ph="skill_dat…e_keywords: [7 items]" />
+            <marker date="1539917834000" expanded="true" signature="1923:1929" ph="Hadoop" />
+            <marker date="1539917834000" expanded="true" signature="1931:1935" ph="Hive" />
+            <marker date="1539917834000" expanded="true" signature="1937:1942" ph="Kafka" />
+            <marker date="1539917834000" expanded="true" signature="1944:1949" ph="Hbase" />
+            <marker date="1539917834000" expanded="true" signature="1951:1959" ph="Zeppelin" />
+            <marker date="1539917834000" expanded="true" signature="1961:1966" ph="Spark" />
+            <marker date="1539917834000" expanded="true" signature="1968:1973" ph="Redis" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,27 +1410,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/mac/2017-10-16-Mac下安装mysql.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
         </state>
       </provider>
     </entry>
