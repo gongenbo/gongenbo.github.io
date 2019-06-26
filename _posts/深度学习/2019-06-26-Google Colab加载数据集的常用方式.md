@@ -98,7 +98,9 @@ Downloading driver_imgs_list.csv.zip to /content
 ```
 !kaggle competitions submit -c state-farm-distracted-driver-detection -f submission.csv -m "Message"
 ```
+
 ### 3.其他常用命令
+
 ```
 
 #!/opt/bin/nvidia-smi
@@ -106,6 +108,7 @@ Downloading driver_imgs_list.csv.zip to /content
 #!cat /proc/cpuinfo
 #!df -h
 ```
+
 ### 4.总结
 1. 需要科学上网才能使用colab，方式请自行查找
 2. 使用过程中经常断开连接，点击右上角箭头"重新连接到托管平台"即可
