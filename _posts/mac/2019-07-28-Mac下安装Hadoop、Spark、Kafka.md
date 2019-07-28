@@ -164,7 +164,8 @@ jps
 ### 1.8 运行mareduce程序遇到的问题
 
 运行自带的wordcount过程中遇到错误: 找不到或无法加载主类 org.apache.hadoop.mapreduce.v2.app.MRAppMaster问题，通过在yarn-site.xml中添加yarn.application.classpath解决了
-reference：[https://blog.csdn.net/hongxiao2016/article/details/88919176](https://blog.csdn.net/hongxiao2016/article/details/88919176)
+
+Reference：[https://blog.csdn.net/hongxiao2016/article/details/88919176](https://blog.csdn.net/hongxiao2016/article/details/88919176)
 
 ### 1.9 运行wordcount测试
 
@@ -210,9 +211,9 @@ teacher	1
 
 ### 1.10 常用监控界面
 
-hdfs界面：http://localhost:9870/dfshealth.html#tab-overview
+hdfs界面：[http://localhost:9870/dfshealth.html#tab-overview](http://localhost:9870/dfshealth.html#tab-overview)
 
-yarn界面：http://localhost:8088/cluster
+yarn界面：[http://localhost:8088/cluster](http://localhost:8088/cluster)
 
 ## 2.Spark的安装
 
@@ -284,6 +285,6 @@ brew install kafka
 
 由于brewhome的存在，比之前自己手动下包安装方便太多了。基本按照这个流程没有问题，如果出错的话，还需要具体问题具体分析。
 
-##5参考文献
+## 5参考文献
 
 Reference:[https://www.jianshu.com/p/fdf3dffb6641](https://www.jianshu.com/p/fdf3dffb6641)
