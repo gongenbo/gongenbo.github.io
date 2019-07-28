@@ -98,4 +98,4 @@ google:
 #      Datas       #
 # ---------------- #
 skill_language_keywords: [Java, Scala, Python]
-skill_data_science_keywords: [Hadoop, Hive, Kafka, Hbase, Zeppelin, Spark, Redis]
+skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]

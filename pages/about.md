@@ -11,7 +11,7 @@ permalink: /about/
 
 ## 联系我
 
-* GitHub：[@izhangzhihao](https://github.com/gongenbo)
+* GitHub：[@gongenbo](https://github.com/gongenbo)
 * 博客：[{{ site.title }}]({{ site.url }})
 * 微博: [@巩大星](http://weibo.com/enbo)
 
