@@ -2,7 +2,7 @@
 layout: post
 title: IllegalArgumentException: URLDecoder's Solution
 categories: Java
-description: IllegalArgumentException: URLDecoder's Solution
+description: IllegalArgumentException URLDecoder
 ---
 ## Proble description
 
