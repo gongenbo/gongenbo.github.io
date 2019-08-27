@@ -62,7 +62,7 @@ https://pos.baidu.com/hcjm?conwid=320&conhei=270&rdid=4295444&dc=3&exps=110011&p
 There is a % between `网络` and `E&` that causes the URLDecoder.decode to be unrecognizable
 
 
-A solution is to replace % to %25 instead. Something like:
+A solution is to replace % to %25 instead. Something like that:
 
 ```aidl
 public static String recursionDecode(String value) throws UnsupportedEncodingException {
@@ -73,3 +73,5 @@ public static String recursionDecode(String value) throws UnsupportedEncodingExc
     return value ;
 }
 ```
+
+If you make the above modification,the value of value will be equal to the value of tmp after the third decoding, it will return directly
