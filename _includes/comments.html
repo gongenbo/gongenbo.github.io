@@ -4,9 +4,9 @@
       {% if site.disqus_username %}
         {% assign load_disqus = true %}
         <!-- Disqus Protection, see https://github.com/mzlogin/mzlogin.github.io/issues/2 -->
-        {% if site.disqus_username == 'mzlogin' %}
+        {% if site.disqus_username == 'gongenbo' %}
           {% assign load_disqus = false %}
-          {% if site.url contains 'mazhuang.org' %}
+          {% if site.url contains 'gongenbo' %}
             {% assign load_disqus = true %}
           {% endif %}
         {% endif %}
@@ -24,7 +24,7 @@
               s.type = 'text/javascript';
               s.async = true;
               var shortname = '{{ site.disqus_username }}';
-
+              console.log("shortname:"+shortname)
               s.src = '//' + shortname + '.disqus.com/embed.js';
 
               s.setAttribute('data-timestamp', +new Date());

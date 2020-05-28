@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://www.gongenbo.com
+url: http://gongenbo.github.io
 date_format: "ordinal"
 title: 巩恩伯
 subtitle: "Make the impossible possible, the possible easy and the easy elegant"
@@ -86,16 +86,16 @@ twitter_username: gongenbo
 # support provider: disqus, changyan
 comments_provider: disqus
 # !!!重要!!! 请修改下面用户名为你自己申请的
-disqus_username: izhangzhihao-github-io
+disqus_username: gongenbo
 
 # ---------------- #
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-82434482-1
+    analytics_id: GTM-NJVCNRZ
 
 # ---------------- #
 #      Datas       #
 # ---------------- #
 skill_language_keywords: [Java, Scala, Python]
-skill_data_science_keywords: [Hadoop, Hive, Kafka, Hbase, Zeppelin, Spark, Redis]
+skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
