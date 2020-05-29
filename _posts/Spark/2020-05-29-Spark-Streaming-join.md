@@ -15,7 +15,7 @@ keywords: spark streaming,join
 
 这三种方式大家按实际情况进行取舍，各自有自己的适用场景。我这里主要介绍在计算引擎端进行join。
 # 2.计算引擎端join
-# 2.1 流与完全静态数据Join
+## 2.1 流与完全静态数据Join
 流与完全静态数据Join有两种方式，一种是RDD join，另一种是broadcast join。
 不过这种方式，我觉得应该是很少用的，很少有完全不变的数据。而且这种方式完
 全可以用后面提到的方式进行替代。
@@ -49,7 +49,7 @@ val joinedStream = kafkaDStream.mapPartitions(part=>{
         ...
     })
 ```
-# 2.2 流与半静态数据Join
+## 2.2 流与半静态数据Join
 半静态数据指的是放在redis等的数据，会被外部更新。思路是，根据redis分区策略，
 key进行repartition，然后每个partition去对应redis机器上取得数据，然后组合。
 这里的话我想的是如果redis的分区策略和kafka的分区策略一致，就不用repar了。
@@ -64,7 +64,7 @@ val result=kafkaDStream.mapPartitions(part=>{
       })
     })
 ```
-# 2.3 流与流join
+## 2.3 流与流join
 流与流join，就是两个实时流进行join。我们之前说过流与静态数据join有更好的替代方案，这里我们将维度数据以流的方式查出来，并且batch时间设置比较长的时间，
 那么这个流就可以作为维度流与事实流进行join，并且可以按照我们设置的batch时间来更新数据。如果我们维度表比较小可以考虑这种方式，维度表比较大的话更建议
 第二种方式。
