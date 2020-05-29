@@ -7,6 +7,9 @@ comments: true
 menu: 关于我
 permalink: /about/
 ---
+## 关于我
+
+15年本科毕业，17年北漂，19年考上研究生，一个想到就去做的平凡的人。
 
 ## 联系我
 
@@ -30,5 +33,5 @@ permalink: /about/
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
-#### 数据科学
+#### 机器学习
 * Learning...
