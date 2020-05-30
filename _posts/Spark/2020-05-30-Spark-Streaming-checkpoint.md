@@ -79,7 +79,7 @@ https://stackoverflow.com/questions/33424445/how-to-checkpoint-dataframes/370142
 在不实用checkpoint时，比如数据来源是kafka，我们可以保存消费kafka的offset，当出现上述情况时，流重新拉起后，从上次的offset重新消费数据即可。
 
 ## 7.参考
-[A Quick Guide On Apache Spark Streaming Checkpoint](https://techvidvan.com/tutorials/spark-streaming-checkpoint/)
-[Checkpointing](https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming-checkpointing.html)
-[spark streaming checkpointing 踩坑记](https://www.jianshu.com/p/d7bee3d51863)
-[Spark Streaming 容错机制](https://www.jianshu.com/p/cacb1e922c38)
+1. [A Quick Guide On Apache Spark Streaming Checkpoint](https://techvidvan.com/tutorials/spark-streaming-checkpoint/)
+2. [Checkpointing](https://jaceklaskowski.gitbooks.io/spark-streaming/spark-streaming-checkpointing.html)
+3. [spark streaming checkpointing 踩坑记](https://www.jianshu.com/p/d7bee3d51863)
+4. [Spark Streaming 容错机制](https://www.jianshu.com/p/cacb1e922c38)
