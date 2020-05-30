@@ -7,10 +7,6 @@ comments: true
 menu: 关于我
 permalink: /about/
 ---
-## 关于我
-
-15年本科毕业，17年北漂，19年考上研究生，一个想到就去做的平凡的人。
-
 ## 联系我
 
 * GitHub：[@gongenbo](https://github.com/gongenbo)

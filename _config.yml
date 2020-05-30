@@ -27,19 +27,19 @@ email: gongenbo@gmail.com
 navs:
   -
     href: /
-    label: 首页
+    label: Blog
 
   -
     href: /categories/
-    label: 分类
+    label: Categories
 
   -
     href: /MySkillTree/
-    label: 我的技能树
+    label: SkillTree
 
   -
     href: /about/
-    label: 关于我
+    label: About
 
 # ---------------- #
 #       RSS        #
