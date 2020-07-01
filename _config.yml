@@ -5,7 +5,7 @@ baseurl:
 url: http://gongenbo.github.io
 date_format: "ordinal"
 title: 巩恩伯
-subtitle: "Make the impossible possible, the possible easy and the easy elegant"
+subtitle: "Better late than never"
 description: "巩恩伯的个人博客"
 keywords: 巩恩伯
 favicon: /favicon.ico
@@ -99,3 +99,4 @@ google:
 # ---------------- #
 skill_language_keywords: [Java, Scala, Python]
 skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
+machine_learning_keywords: [推荐系统, 广告计算, 搜索]

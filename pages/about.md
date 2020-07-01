@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-description: 代码改变世界
+description: Better late than never
 keywords: 巩恩伯
 comments: true
 menu: 关于我
@@ -12,7 +12,7 @@ permalink: /about/
 * GitHub：[@gongenbo](https://github.com/gongenbo)
 * 博客：[{{ site.title }}]({{ site.url }})
 * 微博: [@巩大星](http://weibo.com/enbo)
-* E-mail: gongenbo#buaa.edu.cn
+* E-mail: gongenbo@buaa.edu.cn
 
 ## 技能关键词
 
@@ -29,5 +29,10 @@ permalink: /about/
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
+
 #### 机器学习
-* Learning...
+<div class="btn-inline">
+    {% for keyword in site.skill_machine_learning_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
