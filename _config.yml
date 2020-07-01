@@ -99,4 +99,4 @@ google:
 # ---------------- #
 skill_language_keywords: [Java, Scala, Python]
 skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
-machine_learning_keywords: [推荐系统, 广告计算, 搜索]
+skill_machine_learning_keywords: [推荐系统, 广告计算, 搜索]
