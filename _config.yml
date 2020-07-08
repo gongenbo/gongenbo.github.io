@@ -4,7 +4,7 @@
 baseurl:
 url: http://gongenbo.github.io
 date_format: "ordinal"
-title: Gong Enbo
+title: GongEnbo
 subtitle: "Better late than never"
 description: "巩恩伯的个人博客"
 keywords: 巩恩伯
@@ -17,9 +17,9 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: 巩恩伯
+author: GongEnbo
 location: BeiJing, China
-email: gongenbo@gmail.com
+email: username@gmail.com
 
 # ---------------- #
 #    Navigation    #
