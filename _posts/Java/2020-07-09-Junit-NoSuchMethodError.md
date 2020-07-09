@@ -55,9 +55,9 @@ Empty test suite.
 
 ```
 
-期间我尝试了更换Junit的版本，使用org.junit.jupiter-api，使用org.junit.jupiter(Aggregator)包进行单元测试，宣告失败；
-尝试了删除.idea与.imp文件，然后build->rebuild重新编译还是报同样的错误
-尝试了File->Invalidate cache/restart 重启之后编译也还是报同样的错误
+- 期间我尝试了更换Junit的版本，使用org.junit.jupiter-api，使用org.junit.jupiter(Aggregator)包进行单元测试，宣告失败；
+- 尝试了删除.idea与.imp文件，然后build->rebuild重新编译还是报同样的错误
+- 尝试了File->Invalidate cache/restart 重启之后编译也还是报同样的错误
 
 
 ## 2.问题解决
