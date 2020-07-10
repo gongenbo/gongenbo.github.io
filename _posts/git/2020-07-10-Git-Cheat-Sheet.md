@@ -36,6 +36,51 @@ git查看远程仓库地址: `git remote -v`
 
 有时候误把.class文件或者.idea文件传上去了，只想删除远程仓库的文件，本地文件保留怎么操作呢？命令如下:
 
+3.1 删除cached中的.idea文件
+
+```git rm -r --cached .idea```	# --cached不会删除本地硬盘的文件夹
+
+3.2 添加commit信息
+
+```git commit -m "delete .idea directory"```
+
+3.3 推送到远程库
+
+git push -u origin master
+
+备注：如果想每次提交都不增加.idea文件夹，可以新建一个.gitignore文件，这样上传的时候就会自动忽略了，文件内容如下：
+```$xslt
+git # Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#idea
+.idea/*
+target/*
+*.iml
+
+```
+
 ## 4.将master合并到dev分支
 
 这种操作适用于版本更新迭代比较快，其他人已经将代码合并到了master，自己再分支上也开发了另一个功能，需要同步下来master最新的代码进行测试，步骤如下：
