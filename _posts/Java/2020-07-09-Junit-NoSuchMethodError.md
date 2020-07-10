@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IntelliJ运行Junit报错NoSuchMethodError 
-categories: [Spark]
+categories: [Java]
 description: IntelliJ运行Junit报错NoSuchMethodError 
 keywords: IntelliJ,Junit,NoSuchMethodError 
 ---
