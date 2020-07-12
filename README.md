@@ -1,2 +1,2 @@
 # Gong Enbo's blog
-[http://geekstar.tech](http://geekstar.tech)
+[http://gongenbo.github.io](http://gongenbo.github.io)
