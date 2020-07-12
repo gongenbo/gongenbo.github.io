@@ -23,6 +23,7 @@ permalink: /MySkillTree/
 6. 《美团机器学习实践》
 7. 《深度学习推荐系统》 王喆
 8. 《The Intelligent Investor: The Definitive Book on Value Investing》 Benjamin Graham 
+
 # 技能
 
 ## 已经完成
