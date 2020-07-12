@@ -118,3 +118,23 @@ target/*
 ```git merge dev```
 
 此时本地的master已经是合并完dev分支最新的代码了，可以直接打包测试了。如果测试没问题的话并且你有推到master的权限的话，也可以通过`git commit -m "描述"`,`git push origin master`直接推送到master分支。
+
+## 6.强制覆盖本地代码
+如果本地修改错了，想强制覆盖本地代码（与git远程仓库保持一致），步骤如下
+### 常规方法
+6.1 拉取所有更新，不同步；
+```$xslt
+git fetch --all
+```
+
+6.2 本地代码同步线上最新版本(会覆盖本地所有与远程仓库上同名的文件)；
+```$xslt
+git reset --hard origin/master
+```
+6.3 再更新一次（其实也可以不用，第二步命令做过了其实）
+```$xslt
+git pull
+```
+### 简洁方法
+
+这里我常用的简介命令是`git reset --hard HEAD`，在Git中，用HEAD表示当前版本，，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
