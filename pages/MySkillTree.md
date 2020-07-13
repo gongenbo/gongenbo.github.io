@@ -1,20 +1,20 @@
 ---
 layout: MySkillTree
-title: 我的技能树
-description: 人越学越觉得自己无知
+title: MySkillTree
+description: Stay hungry,Stay foolish.
 permalink: /MySkillTree/
 ---
 
-# 书单
+# Book List
 
-## 已读
+## Have Read
 1. 《深入理解Spark 核心思想与源码分析》
 2. 《图解Spark 核心技术与案例实战》
 3. 《剑指Offer》何海涛
 4. 《深入理解Java虚拟机》周志明
 5. 《算法导论》
 
-## 计划读/在读
+## Plan to read/Reading
 1. 《机器学习》西瓜书 周志华
 2. 《深度学习》 Ian Goodfellow
 3. 《Pattern Recognition and Machine Learning》 Christopher Bishop
@@ -24,15 +24,15 @@ permalink: /MySkillTree/
 7. 《深度学习推荐系统》 王喆
 8. 《The Intelligent Investor: The Definitive Book on Value Investing》 Benjamin Graham 
 
-# 技能
+# Skill
 
-## 已经完成
+## Finished
 
 1. Java、Python
 2. Hadoop、Spark、Hive
 3. leetcode 89/1499
 
-## 计划中/在学
+## Plan/learning
 
 1. LeetCode刷题
 2. 英语口语
