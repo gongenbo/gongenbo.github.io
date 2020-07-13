@@ -9,7 +9,7 @@ keywords: git,cheat,sheet
 ## 1.常用命令
 
 git常用命令见下表：
-![Alt text](https://gongenbo.github.io/img/git/git_cheat_sheet.jpg)
+![Alt text]({{site.url}}/img/git/git_cheat_sheet.jpg)
 
 
 ## 2.本地项目添加到github
