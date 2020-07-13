@@ -34,7 +34,7 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 
 2、选择构建工具Maven Project、Spring Boot版本1.3.6以及一些工程基本信息，点击“Switch to the full version.”java版本选择1.7，可参考下图所示：
                                                                                              
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/linux/20170924_springboot.png)   
+![Alt text]({{site.url}}/img/linux/20170924_springboot.png)   
 
 3、点击Generate Project下载项目压缩包
 

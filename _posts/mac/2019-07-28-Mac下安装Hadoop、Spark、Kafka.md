@@ -40,7 +40,7 @@ source ~/.bash_profile
 
 打开系统偏好设置->共享里的共享配置。
 
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/mac/20190728_share.png)
+![Alt text]({{site.url}}/img/mac/20190728_share.png)
 
 生成公钥，配置免密登录
 
@@ -157,7 +157,7 @@ export PATH=$M2:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 jps
 ```
 
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/mac/20190728_jps.png)
+![Alt text]({{site.url}}/img/mac/20190728_jps.png)
 
 如果出现ResourceManager、SecondaryNameNode、NameNode、NodeManager、DataNode这五个进程说明Hadoop可以正常使用了。
 
@@ -263,7 +263,7 @@ run-example SparkPi
 ```
 
 运行结果：
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/mac/20190728_pi.png)
+![Alt text]({{site.url}}/img/mac/20190728_pi.png)
 
 
 ## 3.Kafka的安装

@@ -13,17 +13,17 @@ keywords: spark streaming,exactly once
 2. 保证消息处理顺序
 在业务场景中经常要保证端到端数据的一致性，既不能丢数也不能重复，下面我们来看一下Spark Streaming，
 如何实现Exactly Once端到端性语义，
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/spark/20200530_exactlyonce.png)
+![Alt text]({{site.url}}/img/spark/20200530_exactlyonce.png)
 
 
 ## 2. 实时计算语义
 ### 2.1 At most once（最多一次）
 这本质上是一种“尽力而为”的方式。数据或事件被保证在应用中最多被所有算子处理一次。这意味着如果在应用处理完之前数据丢失，那么没有额外的重试或重新发送。
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/spark/20200531_atmostonce.png)
+![Alt text]({{site.url}}/img/spark/20200531_atmostonce.png)
 
 ### 2.2 At least once（最少一次）
 应用中的所有算子保证数据或事件被至少处理一次。这意味着如果在应用处理完之前有事件丢失，该事件将会被从数据源重放或重新发送。因为它可以被重新发送，一个事件有时可以被处理多次，即至少一次。
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/spark/20200531_atleastonce.png)
+![Alt text]({{site.url}}/img/spark/20200531_atleastonce.png)
 
 ### 2.3 Exactly once（恰好一次）
 每条数据记录正好被处理一次。没有数据丢失，也没有重复的数据处理。这一点是3个语义里要求最高的。

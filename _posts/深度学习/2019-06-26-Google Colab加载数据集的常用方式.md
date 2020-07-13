@@ -19,7 +19,7 @@ Colab: [https://colab.research.google.com/drive/](https://colab.research.google.
 #### 1.3 配置gpu加速
 - 点击"修改"-->"笔记本配置"--->"硬件加速配置"选择gpu即可
 
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/deeplearn/20190626_start01.png)
+![Alt text]({{site.url}}/img/deeplearn/20190626_start01.png)
 
 ### 2.数据集方式
 
@@ -61,13 +61,13 @@ train = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data/data.csv')
 
 - 使用上传按钮上传如下图，这种方法适合数据集不大的情况：
 
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/deeplearn/20190626_colab01.png)
+![Alt text]({{site.url}}/img/deeplearn/20190626_colab01.png)
 
 
 #### 2.4 从kaggle加载数据集
 - 如果你是在kaggle打比赛，上面整好有你需要的数据集，可以直接使用kaggle命令下载，需要在kaggle的my profile里面选择创建api token，然后在本地生成username与key
 
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/deeplearn/20190626_kaggle01.png)
+![Alt text]({{site.url}}/img/deeplearn/20190626_kaggle01.png)
 
 ```
 {"username":"gongenbo","key":"f26dfa65d06321a37f6b8502cd6b8XXX"}

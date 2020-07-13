@@ -15,7 +15,7 @@ keywords: maven, dependencyManagement
 来看看我们项目中的应用：
                                                                                               pom继承关系图：
                                                                                               
-![Alt text](https://github.com/gongenbo/gongenbo.github.io/raw/master/img/linux/20170924_mvn.jpeg)    
+![Alt text]({{site.url}}/img/linux/20170924_mvn.jpeg)    
 
 Itoo-base-parent(pom.xml)
 
