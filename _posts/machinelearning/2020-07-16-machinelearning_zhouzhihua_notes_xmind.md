@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 机器学习周志华思维导图笔记
+title: 《机器学习》周志华思维导图笔记
 categories: [machinelearning]
 description: 周志华机器学习思维导图笔记
 keywords: 周志华,机器学习,思维导图,笔记
@@ -13,7 +13,7 @@ keywords: 周志华,机器学习,思维导图,笔记
 这篇文章是使用xmind导出的，所以图片有丢失，完整版《机器学习》周志华、思维导图脑图下载地址如下：
 [https://github.com/gongenbo/gongenbo.github.io/tree/master/img/ml/zhouzhihua](https://github.com/gongenbo/gongenbo.github.io/tree/master/img/ml/zhouzhihua)
 
-下面附图片版
+由于时间关系只整理到了11章，下面附图片版
 ![Alt text]({{site.url}}/img/ml/zhouzhihua/ml_zhouzhihua.png)
 ## 绪论
 
