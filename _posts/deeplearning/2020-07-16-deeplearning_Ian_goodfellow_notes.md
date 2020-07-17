@@ -67,5 +67,8 @@ print(x*z)
 
 ${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$
 
+$${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$$
+
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 ## 参考
 《深度学习》 Ian Goodfellow
