@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CentOS安装Redis
-categories: [数据库]
+categories: [databasse]
 description: Redis安装
 keywords: CentOS,redis
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Colab加载数据集的常用方式
-categories: [深度学习]
+categories: [deeplearning]
 description: colab加载数据集
 keywords: colab,gpu,加载数据集
 ---

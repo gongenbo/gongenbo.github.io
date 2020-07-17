@@ -23,17 +23,45 @@ keywords: Ian Goodfellow,深度学习,笔记
 张量：坐标超过两维的数组
 
 矩阵和向量相加，也就是说向量b与矩阵A的每一行相加
+```
+import numpy as np
+x = np.array([[1, 2, 3], [4, 5, 6]])
+z = np.array([1, 2, 3])
+print(x+z)
+#output
+[[2 4 6]
+ [5 7 9]]
+```
 
-$$
- \left[
- \begin{matrix}
-   1 & 2 & 3 \\
-   4 & 5 & 6 \\
-   7 & 8 & 9
-  \end{matrix}
-  \right] \tag{3}
-$$ + 
 ### 2.2 矩阵和向量相乘
+
+A矩阵的列必须与B矩阵行相同
+
+结论：
+1. 元素乘法：np.multiply(a,b)
+2. 矩阵乘法：np.dot(a,b) 或 np.matmul(a,b) 或 a.dot(b) 或直接用 a @ b !
+3. 唯独注意：*，在 np.array 中重载为元素乘法，在 np.matrix 中重载为矩阵乘法!
+
+```
+x = np.array([[1, 2, 3], [4, 5, 6]])
+z = np.array([[1, 2], [2, 3], [4, 5]])
+print(np.dot(x, z))
+x = np.array([[1, 2, 3], [4, 5, 6]])
+z = np.array([[1, 2, 3], [2, 3, 4]])
+print(np.multiply(x, z))
+print(x*z)
+```
+输出
+```
+[[17 23]
+ [38 53]]
+[[ 1  4  9]
+ [ 8 15 24]]
+[[ 1  4  9]
+ [ 8 15 24]]
+```
+
+逆矩阵求解方法：[https://www.shuxuele.com/algebra/matrix-inverse-minors-cofactors-adjugate.html](https://www.shuxuele.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
 
 
 ## 参考
