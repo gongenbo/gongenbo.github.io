@@ -7,6 +7,8 @@ keywords: Github,博客,markdown,公式,LateX,MathJax
 ---
 
 ## 问题简介
+通过MathJax渲染LateX公式在markdown中显示
+
 以前Github博客markdown文章中插入公式都是用word写好公式，然后截图放入github page的文件夹，然后通过
 `![Alt text]({{site.url}}/img/database/20171016_mysql1.png)`输出图片的形式显示公式的。
 
@@ -35,18 +37,22 @@ keywords: Github,博客,markdown,公式,LateX,MathJax
 2. 输入你想转换的公式.
 3. 在Word 2016中选择该公式，上面的选项卡在“设计”一栏。
 4. 在选项卡中选择 “{}LaTeX” 选项：
+
 ![Alt text](/img/md/formula1.png)
+
 5. 复制这个公式：
+
 ![Alt text](/img/md/formula2.png)
 
 ### 2.3 拷贝公式到markdown
 
-公式两边需要加$，粘贴到markdown中，`$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$`，最后公式效果如下：
+公式两边需要加$或者$$（不太明白为什么有些公式加一个$，有些却需要加两个$$才能显示），粘贴到markdown中，`$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$`，最后公式效果如下：
 
-${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$
+$${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$$
 
 $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 ## 参考
 [How to support latex in github-pages?](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
+
 [如何超迅速地把Word的公式转换成LaTeX公式](https://zhuanlan.zhihu.com/p/32321996)
