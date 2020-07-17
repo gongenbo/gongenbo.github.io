@@ -62,7 +62,10 @@ print(x*z)
 ```
 
 逆矩阵求解方法：[https://www.shuxuele.com/algebra/matrix-inverse-minors-cofactors-adjugate.html](https://www.shuxuele.com/algebra/matrix-inverse-minors-cofactors-adjugate.html)
+### 2.5 范数
+范数是将向量映射到非负值的函数，向量x的范数衡量从原点到点x的距离，公式如下：
 
+${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$
 
 ## 参考
 《深度学习》 Ian Goodfellow
