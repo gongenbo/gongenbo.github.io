@@ -46,7 +46,7 @@ keywords: Github,博客,markdown,公式,LateX,MathJax
 
 ### 2.3 拷贝公式到markdown
 
-公式两边需要加$或者$$（不太明白为什么有些公式加一个$，有些却需要加两个$$才能显示），粘贴到markdown中，`$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$`，最后公式效果如下：
+公式两边需要加$或者$$（不太明白为什么有些公式加一个$，有些却需要加两个$$才能显示），粘贴到markdown中，最后公式效果如下：
 
 $${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$$
 

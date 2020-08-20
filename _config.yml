@@ -84,7 +84,7 @@ twitter_username: enbogong
 #      Comments    #
 # ---------------- #
 # support provider: disqus, duoshuo, changyan，livere(来必力)
-comments_provider: livere
+comments_provider: disqus
 # !!!重要!!! 请修改下面用户名为你自己申请的
 disqus_username: gongenbo
 
