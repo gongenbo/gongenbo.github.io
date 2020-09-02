@@ -105,7 +105,7 @@ components:
   # 不蒜子访问统计
   busuanzi:
     enabled: true
-    start_date: 2020-09-02
+    start_date: 2020-08-02
 # 文章字数统计
 word_count:
   enabled: true
