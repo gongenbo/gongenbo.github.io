@@ -33,22 +33,43 @@ Varian和Edelman等人于2007年发表的有影响力的论文描述了由Google
 
 Facebook由于其特殊性，不能使用搜索记录进行广告推荐，而是基于对用户的定位，所以可展示广告的量也更多。Facebook为此建立的级联分类器。这篇文章专注于级联分类器的最后一个阶段点击预测模型，就是这个模型对最终的候选广告集的广告进行预测是否会被点击。
 
-## 级联分类器
+**级联分类器**
+
 级联是基于几个分类器的串联的集合学习的特定情况，使用从给定分类器的输出收集的所有信息作为级联中的下一个分类器的附加信息。与投票或堆叠合奏（多专家系统）不同，级联是多阶段的。
 
 
 # 2. 实验
+
 ## 2.1 构建training data和testing data
 为了实现严格可控的实验，我们选择2013年第四季度任意一周的数据作为离线训练数据。为了保持不同条件下训练数据和测试数据的一致性，准备的离线训练数据要和在线观测的数据相似。我们将存储的离线数据分割成训练数据和测试数据，并使用它们模拟用于在线训练和预测的流数据。
+
 ## 2.2 评估指标Evaluation metrics：
+
+由于我们最关注最重要的因素对机器学习模型的影响，因此我们使用预测的准确性，而不是直接与利润和收入相关的指标。在这项工作中，我们使用归一化熵（NE）和校准作为我们的主要评估指标。
 ###（1）Normalized Entropy（NE）：
+
+Normalized Entropy归一化熵的定义为每次展现时预测得到的log loss的平均值，除以对整个数据集的平均log loss值。之所以需要除以整个数据集的平均log loss值，是因为**backgroud CTR**(背景点击率是训练数据集的平均经验点击率)越接近于0或1，则越容易预测取得较好的log loss值，而做了normalization后，NE便会对backgroud CTR不敏感了。
+
+NE在计算相关的信息增益时是至关重要的。上面是逻辑回归的损失函数，也就是交叉熵。下面是个常数，所以这个Normalized Entropy值越低，则说明预测的效果越好。下面列出表达式：
+
+![Normalized Entropy（NE）](/img/paper/ne.png)
+
+其中N是训练数据集样本数，标签yi取值为-1或+1，pi是预估点击概率，p是平均经验CTR（即广告实际点击次数除以广告展示量）。
+
+NE本质上是计算相对信息增益（RIG）的一个组成部分，RIG = 1 - NE
 
 ###（2）Calibration校正：
 
+Calibration定义为平均预估CTR和经验CTR的比率，即期望的点击数和实际观测的点击数的比率。Calibration 是一个很重要的指标，因为CTR的精确性和校准对在线出价和拍卖的成功至关重要。 该值越接近于1，模型效果越好。
 
 # 3. 预测模型结构
 
+本节提出一种混合模型结构：提升树和稀疏线性分类器的混合模型，如图1所示。3.1节说明了决策树是非常强大的输入特征转换器，能够显著提升概率线性模型的精确度。3.2节说明了更新鲜的训练数据能够使预测更精确，从而激发了一个想法：使用在线学习方法训练学习器。3.3节比较了两种线性分类器的几个变体。
+
+![lr_gbdt_struct.jpg](/img/paper/lr_gbdt_struct.jpg)
+
 ## 3.1 决策树特征转换
+
 ## 3.2 数据新鲜度
 ## 3.3 在线线性分类器
 
@@ -60,7 +81,7 @@ Facebook由于其特殊性，不能使用搜索记录进行广告推荐，而是
 
 # 6. COPING WITH MASSIVE TRAINING DATA
 ## 6.1 Uniform subsampling
-## 6.2 Negative down sampling负下采样
+## 6.2 Negative down sampling
 ## 6.3 Model Re-Calibration
 
 # 7. 结论
@@ -68,6 +89,6 @@ Facebook由于其特殊性，不能使用搜索记录进行广告推荐，而是
 # 个人想法
 
 # 参考
-- [论文翻译|Practical Lessons from Predicting Clicks on Ads at Facebook](https://cloud.tencent.com/developer/article/1559589)
+- [论文翻译 Practical Lessons from Predicting Clicks on Ads at Facebook](https://cloud.tencent.com/developer/article/1559589)
 - [王喆：回顾Facebook经典CTR预估模型](https://zhuanlan.zhihu.com/p/32321996)
-- [论文笔记 | KDD2014 | Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
+- [论文笔记 KDD2014 Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
