@@ -86,17 +86,17 @@ Calibration定义为平均预估CTR(the average estimated CTR)和经验CTR(empir
 
 学习算法是用的是Stochastic Gradient Descent(SGD)随机梯度下降，或者Bayesian online learning scheme for probit regression(BOPR)贝叶斯概率回归在线学习方案都可以。本文评估的在线学习方案基于应用于稀疏线性分类器的SGD算法，原因是资源消耗要小一些。在特征变换后，曝光的广告是以结构化向量的形式给出的：![3_0_1](/img/paper/lr_gbdt/3_0_1.svg)，其中![Alt text](/img/paper/lr_gbdt/3_0_2.svg)是第i个单元向量，而![Alt text](/img/paper/lr_gbdt/3_0_3.svg)是n个分类输入特征的值。在训练阶段，假设给定二元标签![Alt text](/img/paper/lr_gbdt/3_0_4.svg)来表示点击或非点击。
 
-给定带标签的曝光广告![Alt text](/img/paper/lr_gbdt/3_0_5.svg)，定义有效权重的线性组合定义为公式2：
+给定带标签的曝光广告![Alt text](/img/paper/lr_gbdt/3_0_6.svg)，定义有效权重的线性组合定义为公式2：
 
-![Alt text](/img/paper/lr_gbdt/3_0_6.svg)
+![Alt text](/img/paper/lr_gbdt/3_0_7.svg)
 
-其中![Alt text](/img/paper/lr_gbdt/3_0_7.svg)为线性点击分的权重向量。
+其中![Alt text](/img/paper/lr_gbdt/3_0_8.svg)为线性点击分的权重向量。
 
 在SOTA的BOPR（Bayesian online learning scheme for probit regression）算法中，似然度和概率如下定义：
 
-[Alt text](/img/paper/lr_gbdt/3_0_8.svg)
+[Alt text](/img/paper/lr_gbdt/3_0_9.svg)
 
-其中[Alt text](/img/paper/lr_gbdt/3_0_9.svg)为标准正态分布的累积密度函数，[Alt text](/img/paper/lr_gbdt/3_0_10.svg)为标准正态分布的密度函数。通过期望传播和矩匹配来实现在线训练。结果模型由权重向量的近似后验分布的均值和方差组成。
+其中[Alt text](/img/paper/lr_gbdt/3_0_10.svg)为标准正态分布的累积密度函数，[Alt text](/img/paper/lr_gbdt/3_0_11.svg)为标准正态分布的密度函数。通过期望传播和矩匹配来实现在线训练。结果模型由权重向量的近似后验分布的均值和方差组成。
 
 本文比较了BOPR与似然函数的SGD，[Alt text](/img/paper/lr_gbdt/3_0_11.svg)。产生的算法通常称之为逻辑回归（LR）。
 
