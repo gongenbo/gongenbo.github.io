@@ -94,11 +94,11 @@ Calibration定义为平均预估CTR(the average estimated CTR)和经验CTR(empir
 
 在SOTA的BOPR（Bayesian online learning scheme for probit regression）算法中，似然度和概率如下定义：
 
-[Alt text](/img/paper/lr_gbdt/3_0_9.svg)
+![Alt text](/img/paper/lr_gbdt/3_0_9.svg)
 
-其中[Alt text](/img/paper/lr_gbdt/3_0_10.svg)为标准正态分布的累积密度函数，[Alt text](/img/paper/lr_gbdt/3_0_11.svg)为标准正态分布的密度函数。通过期望传播和矩匹配来实现在线训练。结果模型由权重向量的近似后验分布的均值和方差组成。
+其中![Alt text](/img/paper/lr_gbdt/3_0_10.svg)为标准正态分布的累积密度函数，![Alt text](/img/paper/lr_gbdt/3_0_11.svg)为标准正态分布的密度函数。通过期望传播和矩匹配来实现在线训练。结果模型由权重向量的近似后验分布的均值和方差组成。
 
-本文比较了BOPR与似然函数的SGD，[Alt text](/img/paper/lr_gbdt/3_0_11.svg)。产生的算法通常称之为逻辑回归（LR）。
+本文比较了BOPR与似然函数的SGD，![Alt text](/img/paper/lr_gbdt/3_0_12.svg)。产生的算法通常称之为逻辑回归（LR）。
 
 SGD和BOPR都可以针对单个样本进行训练，所以他们可以做成流式的学习器(stream learner)。
 
