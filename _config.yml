@@ -106,3 +106,6 @@ components:
   busuanzi:
     enabled: true
     start_date: 2020-09-02
+# 文章字数统计
+word_count:
+  enabled: true
