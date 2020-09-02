@@ -46,13 +46,14 @@ Facebook由于其特殊性，不能使用搜索记录进行广告推荐，而是
 ## 2.2 评估指标Evaluation metrics：
 
 由于我们最关注最重要的因素对机器学习模型的影响，因此我们使用预测的准确性，而不是直接与利润和收入相关的指标。在这项工作中，我们使用归一化熵（NE）和校准作为我们的主要评估指标。
+
 ###（1）Normalized Entropy（NE）：
 
 Normalized Entropy归一化熵的定义为每次展现时预测得到的log loss的平均值，除以对整个数据集的平均log loss值。之所以需要除以整个数据集的平均log loss值，是因为**backgroud CTR**(背景点击率是训练数据集的平均经验点击率)越接近于0或1，则越容易预测取得较好的log loss值，而做了normalization后，NE便会对backgroud CTR不敏感了。
 
 NE在计算相关的信息增益时是至关重要的。上面是逻辑回归的损失函数，也就是交叉熵。下面是个常数，所以这个Normalized Entropy值越低，则说明预测的效果越好。下面列出表达式：
 
-![Normalized Entropy（NE）](/img/paper/ne.png)
+![Normalized Entropy（NE）](/img/paper/lr_gbdt/ne.png)
 
 其中N是训练数据集样本数，标签yi取值为-1或+1，pi是预估点击概率，p是平均经验CTR（即广告实际点击次数除以广告展示量）。
 
@@ -60,13 +61,34 @@ NE本质上是计算相对信息增益（RIG）的一个组成部分，RIG = 1 -
 
 ###（2）Calibration校正：
 
-Calibration定义为平均预估CTR和经验CTR的比率，即期望的点击数和实际观测的点击数的比率。Calibration 是一个很重要的指标，因为CTR的精确性和校准对在线出价和拍卖的成功至关重要。 该值越接近于1，模型效果越好。
+Calibration定义为平均预估CTR(the average estimated CTR)和经验CTR(empirical CTR)的比率，即期望的点击数和实际观测的点击数的比率。Calibration 是一个很重要的指标，因为CTR的精确性和校准对在线出价和拍卖的成功至关重要。 该值越接近于1，模型效果越好。
+
+**AUC**
+
+注意，ROC下面积（AUC）也是衡量排序质量（不考虑校准）的一个很好的指标。在现实的环境中，我们希望该预测是准确的，而不是仅仅获得最佳排名，以避免潜在的广告投放不足或广告投放过多。 NE可以衡量预测的良好性，并直接反映校准。例如，如果一个模型高估了2倍，并且我们应用了一个全局乘数0.5来修改校准，那么即使AUC保持不变，相应的NE也将得到改善。
+
+上面那句话的意思是**NE衡量预测的良好性反应校准，AUC衡量排名质量而不考虑校准。**
 
 # 3. 预测模型结构
 
-本节提出一种混合模型结构：提升树和稀疏线性分类器的混合模型，如图1所示。3.1节说明了决策树是非常强大的输入特征转换器，能够显著提升概率线性模型的精确度。3.2节说明了更新鲜的训练数据能够使预测更精确，从而激发了一个想法：使用在线学习方法训练学习器。3.3节比较了两种线性分类器的几个变体。
+评估不同的概率线性分类器和不同的在线学习算法。
 
-![lr_gbdt_struct.jpg](/img/paper/lr_gbdt_struct.jpg)
+本节提出一种混合模型结构：提升决策树和概率稀疏线性分类器的串联。，如下图所示。
+
+3.1节说明了决策树是非常强大的输入特征转换器，能够显著提升概率线性模型的精确度。
+
+3.2节说明了更新鲜的训练数据能够使预测更精确，从而激发了一个想法：使用在线学习方法训练学习器。
+
+3.3节比较了两种线性分类器的几个变体。
+
+![lr_gbdt_struct.jpg](/img/paper/lr_gbdt/lr_gbdt_struct.jpg)
+
+
+学习算法是用的是Stochastic Gradient Descent(SGD)随机梯度下降，或者Bayesian online learning scheme for probit regression(BOPR)贝叶斯概率回归在线学习方案都可以。本文评估的在线学习方案基于应用于稀疏线性分类器的SGD算法，原因是资源消耗要小一些。在特征变换后，曝光的广告是以结构化向量的形式给出的：![3_0_1](/img/paper/lr_gbdt/3_0_1.svg)，其中![Alt text](/img/paper/lr_gbdt/3_0_2.svg)是第i个单元向量，而![Alt text](/img/paper/lr_gbdt/3_0_3.svg)是n个分类输入特征的值。在训练阶段，假设给定二元标签![Alt text](/img/paper/lr_gbdt/3_0_4.svg)来表示点击或非点击。
+
+给定带标签的曝光广告(\boldsymbol{x}, y)，定义有效权重的线性组合定义为公式2：
+
+SGD和BOPR都可以针对单个样本进行训练，所以他们可以做成流式的学习器(stream learner)。
 
 ## 3.1 决策树特征转换
 
@@ -89,6 +111,7 @@ Calibration定义为平均预估CTR和经验CTR的比率，即期望的点击数
 # 个人想法
 
 # 参考
-- [论文翻译 Practical Lessons from Predicting Clicks on Ads at Facebook](https://cloud.tencent.com/developer/article/1559589)
-- [王喆：回顾Facebook经典CTR预估模型](https://zhuanlan.zhihu.com/p/32321996)
-- [论文笔记 KDD2014 Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
+- [腾讯云社区 论文翻译 Practical Lessons from Predicting Clicks on Ads at Facebook](https://cloud.tencent.com/developer/article/1559589)
+- [知乎 王喆：回顾Facebook经典CTR预估模型](https://zhuanlan.zhihu.com/p/32321996)
+- [简书 论文笔记 KDD2014 Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
+- [zdkswd.github.io Practical Lessons from Predicting Clicks on Ads at Facebook](https://zdkswd.github.io/2018/11/16/Practical%20Lessons%20from%20Predicting%20Clicks%20on%20Ads%20at%20Facebook/)
