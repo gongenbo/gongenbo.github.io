@@ -1,11 +1,12 @@
 ---
 layout: post
-title: [转]markdown常用语法
+title: markdown常用语法
 categories: [markdown]
-description: markdown常用语法
+description: 介绍markdown 表格、字体、颜色、公式、标题、超链接、图片等常用语法
 keywords: markdown,语法
 ---
-
+## 介绍
+介绍markdown 表格、字体、颜色、公式、标题、超链接、图片等常用语法
 ## 原文
 [buaawht markdown常用语法](https://buaawht.github.io/wiki/markdown)
 
