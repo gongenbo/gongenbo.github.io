@@ -112,36 +112,113 @@ SGD和BOPR都可以针对单个样本进行训练，所以他们可以做成流�
 
 实验效果如表1所示，这里记得NE值越低表示模型越好。有了树特征变换的方法，有了相对3.4%的提升。作为对比，大多数特征工程的实验只能提升一个百分点。
 
-![Alt text](/img/paper/lr_gbdt/3_1_1.jpg)
+![Alt text](/img/paper/lr_gbdt/3_1_1_table1.jpg)
 
 
 ## 3.2 数据新鲜度
 
 点击预测系统通常部署在动态环境中，数据分布会随时间变化。
 
-![Alt text](/img/paper/lr_gbdt/3_2_1_training2test_set_delay.jpg)
+![Alt text](/img/paper/lr_gbdt/3_2_1_figure2.png)
 
-
+如图2所示，随着训练集合测试集延迟的增加，两种模型的预测准确率明显降低。使用单核CPU，上亿的实例，数百颗树来构建boosting模型可能需要24小时以上。在实际情况下，在一个多核机器上，通过足够的并发性，在几个小时内就可以完成训练，而多核机器要有足够的内存来保存整个数据集。在下一节会考虑另一种替代方案，gbdt可以天级训练，而线性分类器可以通过一些在线学习实现近实时训练。
 
 ## 3.3 在线线性分类器
 
+为了最大程度的提高数据的新鲜度，一种方法是在线训练线性分类器，即将带有标签的曝光广告到达时就进行训练。在第4节描述了一个可以生成实时训练数据的基础架构。在本节评估几种基于SGD的在线学习的逻辑回归的学习率设置方法。这里给出了5种学习率设置方法，前三种是每个特征的学习率是独立的，后两种是对所有特征使用相同的学习率。通过网格搜索的最佳学习率如表2所示：
+
+![Alt text](/img/paper/lr_gbdt/3_3_1_table2.png)
+
+实验结果如图3所示：
+
+![Alt text](/img/paper/lr_gbdt/3_3_2_figure3.png)
+
+per coordinate的效果最好（也就是FTRL），相比per weight有5%的提升。
+
+LR和BOPR的对比如表3所示：
+
+![Alt text](/img/paper/lr_gbdt/3_3_1_table3.png)
+
+两者效果差不多，但LR相比BOPR的优势在于模型大小只有一半。BOPR相比LR的优势在于可以进行explore/exploit。
+
 # 4. 在线数据连接器
+
+本文将这个系统称为“在线连接器”，因为它的关键操作是将标签（点击/不点击）与训练输入（广告曝光）以在线的方式连接在一起，类似的基础架构也用于流式学习，例如google的广告系统Photon。在线连接器将实时训练数据流输出到称为scribe的基础架构中。非点击行为的确认需要等待，等待时间窗口的长度需要仔细调整。等待时间太长会造成实时训练数据的延迟，同时增加等待点击信号的曝光缓冲区内存的增加。窗口时间太短会导致一些点击丢失。这种负面效应称为“点击覆盖”，即成功连接曝光的点击比例。在线连接器系统必须在实时性和点击覆盖间取得平衡。
+
+示意数据和模型流程如图4所示
+
+![Alt text](/img/paper/lr_gbdt/4_1_1_figure4.png)
+
+为了实现流到流的连接，系统利用了HashQueue，它是由一个先进先出作为缓冲窗口的队列和用于快速随机访问标签曝光的hash map组成的。
+
+在使用实时训练数据生成系统时，还有一个重要的因素需要考虑，即建立保护机制，防止可能破坏在线学习系统的异常情况。异常检测机制在这里是有帮助的，例如当实时训练数据分布突然改变，则可以自动断开在线训练器和在线连接器的连接。
+
+
 # 5. 内存和延迟的均衡
-## 5.1 number of boosting tree
-## 5.2 Boosting feature importance
-## 5.3 Historical features
+
+## 5.1 boosting tree个数
+
+实验从1颗树到2000颗树，限制每颗树不超过12个叶子节点。从图5可以看到，几乎所有的提升都是来自前500颗树。
+
+![Alt text](/img/paper/lr_gbdt/5_1_1_figure5.png)
+
+## 5.2 Boosting特征重要性
+
+通常，少数特征贡献了绝大部分的解释力，而其余特征的贡献很小。如图6所示。
+
+![Alt text](/img/paper/lr_gbdt/5_2_1_figure6.png)
+
+从上图可以看到，top10的特征贡献了一半的特征重要性，最后300个特征贡献了不到1%的特征重要性。
+
+如图7所示实验了不同特征个数对模型效果的影响。
+
+![Alt text](/img/paper/lr_gbdt/5_2_2_figure7.png)
+
+## 5.3 历史特征
+
+在Boosting模型中使用的特征可以分为两类：上下文特征和历史特征。图8展示了历史特征在重要性中的占比。
+
+![Alt text](/img/paper/lr_gbdt/5_3_1_figure8.png)
+
+从上图可以看到，历史特征比上下文特征提供了更多的解释力。top10特征全是历史特征。表4展示了只用历史特征和只用上下文特征的效果。
+
+![Alt text](/img/paper/lr_gbdt/5_3_2_table4.png)
+
+但是要主要上下文特征对于处理冷启动问题非常重要。
+
+从图9可以看到，上下文特征相比历史特征更依赖数据新鲜度。
+
+![Alt text](/img/paper/lr_gbdt/5_3_3_figure9.png)
 
 # 6. COPING WITH MASSIVE TRAINING DATA
-## 6.1 Uniform subsampling
-## 6.2 Negative down sampling
+
+本节评估两种降采样技术，均匀降采样(Uniform subsampling)和负样本降采样(Negative down sampling)。
+
+## 6.1 均匀降采样
+
+![Alt text](/img/paper/lr_gbdt/6_1_1_figure10.png)
+
+## 6.2 负样本降采样
+
+![Alt text](/img/paper/lr_gbdt/6_2_1_figure11.png)
+
 ## 6.3 Model Re-Calibration
+
+负样本降采样能加速训练，同时提升模型性能。需要注意的是，如果模型用了负采样，那么也需要对降采样空间中的预测进行校准。这里举个例子，p为降采样空间中的预测，w为降采样比率，q为校准后的预测。
+
+![Alt text](/img/paper/lr_gbdt/6_3.svg)
 
 # 7. 结论
 
+这篇看起来还是比较轻松愉快的，没有那么难的感觉。一方面可能本篇更偏工业风，都是工业实践经验，没有复杂的算法推导，另一方面可能是一些当时的实践经验在今天已经习以为常了，更加熟悉的缘故。这里不得不感叹技术的发展之快，从新鲜东西变为常规套路也就短短的几年时间。如果再回顾的话，可能重点看3.1节就行了，这里是本篇最创新的地方，也就是GBDT和LR如何结合的，说白了其实就是用GBDT自动给连续特征做特征工程，而不是傻傻的手动指定规则离散化，用以增加LR的特征。另外本文的评估指标有点小众的感觉，所以所有实验数据看起来不是那么的直观。
+
+
 # 个人想法
 
+
+
 # 参考
+- [简书 论文笔记 KDD2014 Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
 - [腾讯云社区 论文翻译 Practical Lessons from Predicting Clicks on Ads at Facebook](https://cloud.tencent.com/developer/article/1559589)
 - [知乎 王喆：回顾Facebook经典CTR预估模型](https://zhuanlan.zhihu.com/p/32321996)
-- [简书 论文笔记 KDD2014 Practical Lessons from Predicting Clicks on Ads at Facebook](https://www.jianshu.com/p/698d02b20916)
 - [zdkswd.github.io Practical Lessons from Predicting Clicks on Ads at Facebook](https://zdkswd.github.io/2018/11/16/Practical%20Lessons%20from%20Predicting%20Clicks%20on%20Ads%20at%20Facebook/)
