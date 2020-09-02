@@ -19,11 +19,9 @@ layout: default
             <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
           </span>
           {% endfor %}
-          <!--不蒜子网站访问量统计，https://busuanzi.ibruce.info/-->
           <span class="meta-info">
-            <span id="busuanzi_container_page_pv" class="octicon octicon-clock">
-              visited:<span id="busuanzi_value_page_pv"></span>
-            </span>
+            <span class="octicon octicon-clock"></span>
+            共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，约 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
           </span>
         </div>
       </div>
