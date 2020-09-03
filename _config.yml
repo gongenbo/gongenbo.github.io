@@ -4,10 +4,10 @@
 baseurl:
 url: http://gongenbo.github.io
 date_format: "ordinal"
-title: Gong Enbo
+title: GeekStar
 subtitle: "Better late than never"
-description: "巩恩伯的个人博客"
-keywords: 巩恩伯
+description: "极客之星"
+keywords: GeekStar
 favicon: /favicon.ico
 timezone: Asia/BeiJing
 encoding: "utf-8"

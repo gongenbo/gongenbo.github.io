@@ -143,7 +143,7 @@ LR和BOPR的对比如表3所示：
 
 ![Alt text](/img/paper/lr_gbdt/3_3_1_table3.png)
 
-两者效果差不多，但LR相比BOPR的优势在于模型大小只有一半。BOPR相比LR的优势在于可以进行explore/exploit。
+两者效果差不多，但LR相比BOPR的优势在于模型大小只有一半。BOPR相比LR的优势在于可以进行[explore/exploit(探索/利用)](https://cloud.tencent.com/developer/article/1164110)。
 
 # 4. 在线数据连接器
 
