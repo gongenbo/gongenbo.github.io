@@ -46,7 +46,7 @@ keywords: Github,博客,markdown,公式,LateX,MathJax
 
 ### 2.3 拷贝公式到markdown
 
-公式两边需要加$$，粘贴到markdown中，最后公式效果如下：
+公式两边需要加$或$$，粘贴到markdown中，最后公式效果如下：
 
 $${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$$
 
