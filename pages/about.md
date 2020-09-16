@@ -14,6 +14,10 @@ permalink: /about/
 * 微博: [@巩大星](http://weibo.com/enbo)
 * E-mail: gongenbo#buaa.edu.cn
 
+## 关于我
+
+北航软件工程硕士，喜欢狼人杀
+
 ## 技能关键词
 
 #### 开发语言
