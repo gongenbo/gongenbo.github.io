@@ -7,16 +7,16 @@ comments: true
 menu: 关于我
 permalink: /about/
 ---
+## 关于我
+
+北航软件工程小硕，方向推荐系统、NLP，日常爱好狼人杀~
+
 ## 联系我
 
 * GitHub：[@gongenbo](https://github.com/gongenbo)
 * 博客：[{{ site.title }}]({{ site.url }})
 * 微博: [@巩大星](http://weibo.com/enbo)
 * E-mail: gongenbo#gmail.com
-
-## 关于我
-
-北航软件工程小硕，方向推荐系统、NLP，日常爱好狼人杀~
 
 ## 技能关键词
 
