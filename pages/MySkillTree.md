@@ -18,7 +18,7 @@ permalink: /MySkillTree/
 1. 《机器学习》西瓜书 周志华
 2. 《深度学习》 Ian Goodfellow
 3. 《Pattern Recognition and Machine Learning》 Christopher Bishop
-4. 《统计学习方法》 李航
+4. 《统计学习方法》第二版 李航
 5. 《百面机器学习》葫芦书 诸葛越
 6. 《美团机器学习实践》
 7. 《深度学习推荐系统》 王喆
@@ -30,24 +30,23 @@ permalink: /MySkillTree/
 
 1. Java、Python
 2. Hadoop、Spark、Hive
-3. leetcode 89/1499
+3. 2020/08/30戒三国杀
 
 ## Plan/learning
 
-1. LeetCode刷题
-2. 英语口语
+1. leetcode 231/1499
+2. 雅思6.5
 3. Spark数据一致性
 4. 深入学习Hive Sql
 5. Flink实时计算
 6. Druid实时同步数据到kudu
 7. 推荐系统
-8. 广告计算
+8. 计算广告
 9. 搜索算法
+10. 每天5km
 
-## 其他计划
 
-1. 2020/08/30戒游戏
-2. 每天5km
+
 
 
 
