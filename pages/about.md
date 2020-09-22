@@ -7,9 +7,6 @@ comments: true
 menu: 关于我
 permalink: /about/
 ---
-## 关于我
-
-北航软件工程小硕，方向推荐、广告、NLP，日常爱好狼人杀~
 
 ## 联系我
 
