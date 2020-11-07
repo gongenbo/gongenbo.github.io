@@ -97,9 +97,9 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_language_keywords: [Java, Scala, Python]
+skill_language_keywords: [Java, Python, C++]
 skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
-skill_machine_learning_keywords: [推荐, 广告, NLP]
+skill_machine_learning_keywords: [推荐, NLP, 计算机视觉]
 # 组件配置
 components:
   # 不蒜子访问统计
