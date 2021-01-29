@@ -4,10 +4,10 @@
 baseurl:
 url: http://gongenbo.github.io
 date_format: "ordinal"
-title: Gong Enbo
-subtitle: "Better late than never"
+title: 巩恩伯
+subtitle: "Keep the faith!"
 description: "巩恩伯的博客"
-keywords: Gong Enbo
+keywords: 巩恩伯
 favicon: /favicon.ico
 timezone: Asia/BeiJing
 encoding: "utf-8"
@@ -17,7 +17,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Gong Enbo
+author: 巩恩伯
 location: BeiJing, China
 email: username@gmail.com
 
@@ -27,19 +27,19 @@ email: username@gmail.com
 navs:
   -
     href: /
-    label: Blog
+    label: 博客
 
   -
     href: /categories/
-    label: Categories
+    label: 目录
 
   -
     href: /MySkillTree/
-    label: SkillTree
+    label: 技能树
 
   -
     href: /about/
-    label: About
+    label: 关于我
 
 # ---------------- #
 #       RSS        #
