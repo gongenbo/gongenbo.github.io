@@ -125,7 +125,7 @@ $$
 
 ### 3.3 CART决策树生成算法
 
-CART与ID3，C4.5不同之处在于CART生成的树必须是二叉树，其全称是分类与回归树(classification and regression tree)，既可以用于分类问题，又可以用于回归问题。
+CART与ID3，C4.5不同之处在于CART生成的树必须是二叉树，其全称是分类与回归树(classification and regression tree)，既可以用于分类问题，又可以用于<font color='red'>回归</font>问题。
 CART对C4.5进行了改进，其分类模型对比于C4.5:
 其中在分裂策略上，C4.5使用熵模型，涉及大量的对数运算，而CART分类树算法使用基尼指数代替信息增益比，基尼系数代表了模型的纯度，基尼指数越小，模型越纯净。
 
