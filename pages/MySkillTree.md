@@ -13,37 +13,33 @@ permalink: /MySkillTree/
 3. 《剑指Offer》何海涛
 4. 《深入理解Java虚拟机》周志明
 5. 《算法导论》
+6. 《百面机器学习》葫芦书 诸葛越
+7. 《机器学习》西瓜书 周志华
 
 ## Plan to read/Reading
-1. 《机器学习》西瓜书 周志华
-2. 《深度学习》 Ian Goodfellow
-3. 《Pattern Recognition and Machine Learning》 Christopher Bishop
-4. 《统计学习方法》第二版 李航
-5. 《百面机器学习》葫芦书 诸葛越
-6. 《美团机器学习实践》
-7. 《深度学习推荐系统》 王喆
-8. 《The Intelligent Investor: The Definitive Book on Value Investing》 Benjamin Graham 
+
+1. 《深度学习》 Ian Goodfellow
+2. 《Pattern Recognition and Machine Learning》 Christopher Bishop
+3. 《统计学习方法》第二版 李航
+4. 《美团机器学习实践》
+5. 《深度学习推荐系统》 王喆
+6. 《The Intelligent Investor: The Definitive Book on Value Investing》 Benjamin Graham 
 
 # Skill
 
 ## Finished
 
-1. Java、Python
-2. Hadoop、Spark、Hive
-3. 2020/08/30戒三国杀
-
 ## Plan/learning
 
-1. leetcode 231/1499
-2. 雅思6.5
-3. Spark数据一致性
-4. 深入学习Hive Sql
-5. Flink实时计算
-6. Druid实时同步数据到kudu
-7. 推荐系统
-8. 计算广告
-9. 搜索算法
-10. 每天5km
+1. leetcode 301/1499
+2. 5km跑步计划
+3. 戒游戏 from 2021/03/23
+4. Master了，不能只看博客，需要精读树模型论文，了解GBDT、XGBoost、LightGBM的演进
+5. 精读CNN、RNN、LSTM、GRU、BiLSTM、Transformer论文，了解演进过程
+6. 学习图表示学习相关的论文及模型
+7. 学习推荐算法 FM、deepfm、wnd、din
+8. 参加一个推荐算法的比赛或者项目
+
 
 
 
