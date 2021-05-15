@@ -42,13 +42,18 @@ keywords: Transformer,Text Segmentation
 
 句子：![juzixulie](/img/paper/cats/2_1_1_2.png) 句长：T
 
-句首添加特殊标识符 ![juzixulie](/img/paper/cats/2_1_1_3.png) 用于在经过低层后获取句子的表示
+句首添加特殊标识符 $$t_0^i\ =\ [ss]$$ 用于在经过低层后获取句子的表示
 
-[公式] 由预训练词嵌入和位置嵌入组合而成， $${\rm Transform}_T$$ 表示一层Transformer，则对于第一层，有
+$t_i\$ 由预训练词嵌入和位置嵌入组合而成， $${\rm Transform}_T$$ 表示一层Transformer，则对于第一层，有
+![alt](/img/paper/cats/2_1_1_3.png)
 
-取结果序列首位作为句子表示 [公式]
+取结果序列首位作为句子表示 
+![alt](/img/paper/cats/2_1_1_4.png)
 
 ### 2.1.2 句子置于上下文语境中
+对于第二层
+![alt](/img/paper/cats/2_1_2_1.png)
+同理，取首位 $${\rm SS}^0$$ 作为该句子序列 [公式] 的表示
 
 ### 2.1.3 分割分类
 
@@ -69,8 +74,6 @@ keywords: Transformer,Text Segmentation
 对比基线模型：1)有监督文本分割模型Koshorek et al. (2018） 2)无监督文本分割模型 GRAPHSEG 3)按比例随机给予正标签的RANDOM测试，为 [公式] 提供上界
 
 消融实验：对比了有无显式连贯性建模的模型CATS(有)和TLT-TS(无) 
-
-# 3. 实验装置
 
 # 4. 结果分析
 # 4.1 基础评估

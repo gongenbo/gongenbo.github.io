@@ -194,7 +194,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 [^1]: Here is the footnote 1 definition.
 
-[GitHub博客markdown文章插入LateX公式](https://geekstar.tech/2020/07/17/github_page_add_latex_formula/)
+[GitHub博客markdown文章插入LateX公式](https://gongenbo.github.io/2020/07/17/github_page_add_latex_formula/)
 
 
 ### 修改颜色
