@@ -23,11 +23,14 @@ keywords: Transformer,Text Segmentation
 
 本文提出的监督模型使用双层Transformer网络编码句子序列，除了以预测分割结果作为目标以外，还对连贯性进行建模并应用在训练过程中。迫使模型预测连贯性更强的文本段落作为分割结果。进一步，文章提出的模型能够实现零样本语言迁移，其使用英文维基百科训练的模型能够在其他语言上获得较好的分割效果。
 
-# 2. CATS: 连贯性感知双层Transformer用于文本分割
+# 2. 连贯性感知双层Transformer模型
 
 下图2就是这个CATS（Coherence-Aware Two-Level Transformer for Text Segmentation）模型
+
 ![cats](/img/paper/cats/2.png)
+
 模型接收定长句子序列作为输入，字符编码由预训练词嵌入和位置嵌入连接得到。句子序列首先通过字符级Transformer得到句子表示，再经句子级Transformer强化上下文信息。编码器输出经过一前馈二分类器对各句进行分类。另将编码后的句子序列输入另一前馈网络获取一个连贯性分数。
+
 获取位置嵌入的方法：[Transformer 中的 positional embedding](https://zhuanlan.zhihu.com/p/359366717)
 
 ## 2.1 以Transformer为基础的文本分割
@@ -36,26 +39,34 @@ keywords: Transformer,Text Segmentation
 
 ### 2.1.1 句子编码
 
-定义
-
 句子序列：![juzixulie](/img/paper/cats/2_1_1_1.png) 句子数 ：K
 
 句子：![juzixulie](/img/paper/cats/2_1_1_2.png) 句长：T
 
-句首添加特殊标识符 $$t_0^i\ =\ [ss]$$ 用于在经过低层后获取句子的表示
+句首添加特殊标识符 $t_0^i\ =\ [ss]$ 用于在经过低层后获取句子的表示
 
-$t_i\$ 由预训练词嵌入和位置嵌入组合而成， $${\rm Transform}_T$$ 表示一层Transformer，则对于第一层，有
+$t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ 表示一层Transformer，则对于第一层，有
+
 ![alt](/img/paper/cats/2_1_1_3.png)
 
 取结果序列首位作为句子表示 
+
 ![alt](/img/paper/cats/2_1_1_4.png)
 
 ### 2.1.2 句子置于上下文语境中
 对于第二层
+
 ![alt](/img/paper/cats/2_1_2_1.png)
-同理，取首位 $${\rm SS}^0$$ 作为该句子序列 [公式] 的表示
+
+同理，取首位 ${\rm SS}^0$ 作为该句子序列 ![alt](/img/paper/cats/2_1_2_2.png)的表示
 
 ### 2.1.3 分割分类
+
+编码了上下文信息的句子表示进入分类器
+
+![alt](/img/paper/cats/2_1_3_1.png)
+
+![alt](/img/paper/cats/2_1_3_2.png)
 
 ## 2.2 附加连贯性模型
 
