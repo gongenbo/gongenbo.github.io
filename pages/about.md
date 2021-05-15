@@ -31,7 +31,7 @@ permalink: /about/
     {% endfor %}
 </div>
 
-#### 机器学习
+#### 算法学习
 <div class="btn-inline">
     {% for keyword in site.skill_machine_learning_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
