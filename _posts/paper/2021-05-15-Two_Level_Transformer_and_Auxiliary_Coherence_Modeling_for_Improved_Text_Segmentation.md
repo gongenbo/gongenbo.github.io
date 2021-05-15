@@ -39,7 +39,7 @@ keywords: Transformer,Text Segmentation
 
 ### 2.1.1 句子编码
 
-句子序列：![juzixulie](/img/paper/cats/2_1_1_1.png) 句子数 ：K
+句子序列：<img alt="*.png" src="/img/paper/cats/2_1_1_1.png" width="" height="13"> =100x100) 句子数 ：K
 
 句子：![juzixulie](/img/paper/cats/2_1_1_2.png) 句长：T
 
