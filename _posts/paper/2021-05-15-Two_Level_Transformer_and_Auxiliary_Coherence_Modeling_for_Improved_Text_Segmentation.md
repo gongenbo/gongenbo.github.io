@@ -47,16 +47,14 @@ keywords: Transformer,Text Segmentation
 
 $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ 表示一层Transformer，则对于第一层，有
 
-<img alt="*.png" src="/img/paper/cats/2_1_1_3.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_1_3.png" width="">
 
-取结果序列首位作为句子表示 
-
-<img alt="*.png" src="/img/paper/cats/2_1_1_4.png" width="" height="30">
+取结果序列首位作为句子表示 <img alt="*.png" src="/img/paper/cats/2_1_1_4.png" width="" height="30">
 
 ### 2.1.2 句子置于上下文语境中
 对于第二层
 
-<img alt="*.png" src="/img/paper/cats/2_1_2_1.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_2_1.png" width="">
 
 同理，取首位 ${\rm SS}^0$ 作为该句子序列 <img alt="*.png" src="/img/paper/cats/2_1_2_2.png" width="" height="30">的表示
 
@@ -64,25 +62,25 @@ $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ �
 
 编码了上下文信息的句子表示进入分类器
 
-<img alt="*.png" src="/img/paper/cats/2_1_3_1.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_3_1.png" width="">
 
 其中真实标签 <img alt="*.png" src="/img/paper/cats/2_1_3_3.png" width="" height="30"> ，使用负对数函数计算分类损失
 
 使用负的似然估计作为损失函数在所有句子上进行训练
-<img alt="*.png" src="/img/paper/cats/2_1_3_2.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_3_2.png" width="">
 
 ## 2.2 附加连贯性模型
 
 对原文中的正确分割结果 <img alt="*.png" src="/img/paper/cats/2_1_4_1.png" width="" height="30"> 进行了破坏，得到反例 <img alt="*.png" src="/img/paper/cats/2_1_4_2.png" width="" height="30"> ，破坏的方法为1）随机打乱句子顺序，2）用其他分段的句子随机替换本分段中的句子
 
 将正确序列和错误序列的表示成对进行回归运算，有
-<img alt="*.png" src="/img/paper/cats/2_1_4_3.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_4_3.png" width="">
 
-<img alt="*.png" src="/img/paper/cats/2_1_4_4.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_4_4.png" width="">
 
 为了迫使模型预测出更具备连贯性的分割结果，定义损失函数如下，其中 <img alt="*.png" src="/img/paper/cats/2_1_4_5.png" width="" height="30">为正确序列与错误序列连贯性分数之差的下界
 
-<img alt="*.png" src="/img/paper/cats/2_1_4_6.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_1_4_6.png" width="">
 
 ## 2.3 训练与预测
 
@@ -90,7 +88,7 @@ $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ �
 
 预测过程以1为步长进行取样，对于所有包含某句子S的序列 <img alt="*.png" src="/img/paper/cats/2_3_1.png" width="" height="30"> ,求其预测值的均值，
 
-<img alt="*.png" src="/img/paper/cats/2_3_2.png" width="" height="30">
+<img alt="*.png" src="/img/paper/cats/2_3_2.png" width="">
 
 若 <img alt="*.png" src="/img/paper/cats/2_3_3.png" width="" height="30">大于某预设门限值，则认为该句是一个部分的起始句。
 
