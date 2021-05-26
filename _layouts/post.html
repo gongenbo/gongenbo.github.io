@@ -38,7 +38,6 @@ layout: default
     <article class="article-content markdown-body">
     {{ content }}
       <!--打赏-->
-      <% if (theme.donate) { %>
       <!-- css -->
       <style type="text/css">
         .center {
@@ -53,17 +52,16 @@ layout: default
           height: 82px;
           background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
           _background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
-
-        <!-- http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
+        /*http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
         因为本 hexo 生成的博客所用的 theme 的 a:hover 带动画效果，
         为了在让打赏按钮显示效果正常 而 添加了以下几行 css，
-        嵌入其它博客时不一定要它们。 -->
+        嵌入其它博客时不一定要它们。 */
           -webkit-transition: background 0s;
           -moz-transition: background 0s;
           -o-transition: background 0s;
           -ms-transition: background 0s;
           transition: background 0s;
-        <!-- /让打赏按钮的效果显示正常 而 添加的几行 css 到此结束 -->
+        /*让打赏按钮的效果显示正常 而 添加的几行 css 到此结束*/
         }
 
         .donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
@@ -86,7 +84,6 @@ layout: default
           <br>
           <a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
           <span class="donate_txt">
-      <%= theme.donate.text %>
     </span>
 
 
@@ -109,9 +106,7 @@ layout: default
           <a href="<%= theme.donate.alipay %>" title="用支付宝扫一扫即可~" class="fancybox" rel="article0">
             <img src="<%= theme.donate.alipay %>" title="支付宝打赏 Colin" height="190px" width="auto"/>
           </a>
-
           <span class="donate_txt">
-      <%= theme.donate.text %>
     </span>
 
         </div>
@@ -138,8 +133,6 @@ layout: default
         </script>
         <!-- /donate script -->
       </div>
-      <!-- /Donate Module -->
-      <% } %>
       <!--打赏结束-->
       <!--谷歌文章内嵌广告 article_ads-->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
