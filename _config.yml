@@ -109,3 +109,9 @@ components:
 # 文章字数统计
 word_count:
   enabled: true
+#打赏
+donate:
+  enable: true
+  text: Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
+  wechat: /assets/images/reward/wepay.png
+  alipay: /assets/images/reward/alipay.png
