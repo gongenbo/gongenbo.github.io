@@ -99,7 +99,7 @@ google:
 # ---------------- #
 skill_language_keywords: [Java, Python]
 skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
-skill_machine_learning_keywords: [NLP, 推荐, 图表示学习]
+skill_machine_learning_keywords: [NLP, 推荐算法]
 # 组件配置
 components:
   # 不蒜子访问统计
