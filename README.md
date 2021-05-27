@@ -1,3 +1,3 @@
 # Gong Enbo's blog
 
-[https://geekstar.tech](https://geekstar.tech)
+[https://gongenbo.github.io](https://gongenbo.github.io)
