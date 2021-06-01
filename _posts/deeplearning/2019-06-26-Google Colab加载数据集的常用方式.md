@@ -23,9 +23,9 @@ Colab: [https://colab.research.google.com/drive/](https://colab.research.google.
 
 ### 2.数据集方式
 
-#### 2.1 使用!wget加载数据集
+#### 2.1 使用!wget下载数据集到服务器
 
-Colab其实是一台带有GPU的Centos虚拟机，可以直接使用linux的`wget`命令下载数据集，下载速度可以达到60-130mb/s
+Colab其实是一台带有GPU的Centos虚拟机，可以直接使用linux的`wget`命令下载数据集到服务器，默认是下载到/content路径，下载速度可以达到60-130mb/s
 
 - 下载并解压数据集命令：
 ```
@@ -46,20 +46,32 @@ train_set = ImageFolder('./hymenoptera_data/train/', train_tf)
 ```
 
 #### 2.2 挂载谷歌云盘加载数据集
-- 需要先将文件上传到谷歌云盘，比如data/data.csv
-- 在colab中挂载谷歌云盘的命令如下，执行后会要求输入谷歌账号的key即可挂载
+
+- 首先在colab中挂载谷歌云盘的命令如下，执行后会要求输入谷歌账号的key即可挂载
 ```
 from google.colab import drive
 drive.mount('/content/drive/')
 ```
+
+- 将文件上传到谷歌云盘，比如data/data.csv。上传的方式一种是手动上传，另一种是通过wget命令下载到谷歌云盘，然后加载使用，存谷歌云盘的好处是数据不会像第一种方法那样下次连接就丢失，坏处是谷歌云盘只有15g，对大数据集不适用,将数据集下载到谷歌云盘的命令如下：
+```
+import os
+#改变当前工作目录到谷歌云盘的路径
+path="/content/drive/My Drive/Colab Notebooks/"
+os.chdir(path)
+os.listdir(path)
+#使用wget命令下载数据集到这个路径
+!wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/data.csv
+```
+
 - 加载数据集
 ```
 train = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data/data.csv')
 ```
 
-#### 2.3 使用上传按钮上传
+#### 2.3 使用上传按钮上传到磁盘
 
-- 使用上传按钮上传如下图，这种方法适合数据集不大的情况：
+- 谷歌提供67G的磁盘空间，使用上传按钮上传如下图，这种方法适合数据集不大或者自有数据集的情况：
 
 ![Alt text]({{site.url}}/img/deeplearn/20190626_colab01.png)
 
@@ -103,10 +115,14 @@ Downloading driver_imgs_list.csv.zip to /content
 
 ```
 
-#!/opt/bin/nvidia-smi
-#!cat /proc/meminfo
-#!cat /proc/cpuinfo
-#!df -h
+#查看gpu信息
+!/opt/bin/nvidia-smi
+#查看内存
+!cat /proc/meminfo
+#查看cpu信息
+!cat /proc/cpuinfo
+#查看空间大小
+!df -h
 ```
 
 ### 4.总结
