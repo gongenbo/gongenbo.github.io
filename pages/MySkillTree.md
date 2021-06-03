@@ -33,9 +33,9 @@ permalink: /MySkillTree/
 
 1. leetcode 301/1499
 2. 5km跑步计划
-3. 戒游戏 from 2021/03/23
-4. Master了，不能只看博客，需要精读树模型论文，了解GBDT、XGBoost、LightGBM的演进
-5. 精读CNN、RNN、LSTM、GRU、BiLSTM、Transformer论文，了解演进过程
+3. 戒游戏 from 2021/05/31
+4. 精读树模型论文，学习GBDT、XGBoost、LightGBM及演进过程
+5. 精读CNN、RNN（LSTM、GRU、BiLSTM）、Attention、Transformer论文，了解演进过程
 6. 学习图表示学习相关的论文及模型
 7. 学习推荐算法 FM、deepfm、wnd、din
 8. 参加一个推荐算法的比赛或者项目
