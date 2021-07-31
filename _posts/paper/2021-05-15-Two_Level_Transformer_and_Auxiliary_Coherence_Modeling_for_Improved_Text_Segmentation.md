@@ -7,11 +7,11 @@ keywords: Transformer,Text Segmentation
 ---
 
 # 论文
-[Two-Level Transformer and Auxiliary Coherence Modeling for Improved Text](https://arxiv.org/abs/2001.00891)
+[Two-Level Transformer and Auxiliary Coherence Modeling for Improved Text Segmentation](https://arxiv.org/abs/2001.00891)
 
 # 0. 为什么要读这篇文章
 
-最近有一个作文切题度任务，希望能借助这篇论文的思想，先使用本文双层Transformer的思想进行文本分割，然后再进行相似度对比。
+最近有一个作文切题度任务，希望能借助这篇论文的思想，先使用本文双层Transformer的思想进行文本话题分割，然后再利用每个话题与作文题目介绍进行相似度对比，得出作文切题度。
 
 # 1. 简介
 
@@ -91,7 +91,7 @@ $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ �
 
 <img alt="*.png" src="/img/paper/cats/2_3_2.png" width="">
 
-若 <img alt="*.png" src="/img/paper/cats/2_3_3.png" width="" height="30">大于某预设门限值，则认为该句是一个部分的起始句。
+若 <img alt="*.png" src="/img/paper/cats/2_3_3.png" width="" height="30">大于某预设门限值（EducationalTestingService的代码中这个阈值是0.3），则认为该句是一个部分的起始句。
 
 ## 2.4 利用跨语言词嵌入实现零样本语言迁移
 跨语言词嵌入的最终目标是学习到一个可以在所有语言中共享的嵌入空间，使得我们可以在任何语言上进行模型的学习，同时获得到在其他任何语言上进行预测的能力。
@@ -101,7 +101,6 @@ $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ �
 [跨语言词嵌入空间论文阅读笔记](https://zhuanlan.zhihu.com/p/69366459)
 
 # 3. 实验部分
-
 
 主要数据集：WIKI-727K Corpus、Standard Test Corpora、以及少部分非英语数据
 
@@ -130,9 +129,9 @@ $t_i\$ 由预训练词嵌入和位置嵌入组合而成， ${\rm Transform}_T$ �
 现存文本分割模型多依据相邻句子之间词汇或词义的重复率来表征文段的连贯性，以此作为分割的依据。本文提出由两层Transformer构成的监督模型，低层编码句子，高层编码句子序列。在两项任务上进行训练，分别为 1)预测句子分段标签 2)对比正确分段和错误分段的连贯性。该模型在多个文本分割数据集上取得sota（state-of-the-art，指该项研究任务中，最好/最先进的模型），且能够实现向其他语言的零样本迁移。未来或可在负样本构建的过程上进行改进。
 
 # 代码实现
+Two Level Transformer for text seg
 [Github EducationalTestingService/CATS](https://github.com/EducationalTestingService/CATS)
 
-我在使用这个代码跑模型的时候发现缺少词嵌入与预训练的数据集，尝试使用[Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)作为预训练的en.vectors但是加载报错，有跑通的希望能喊我一声：gongenbo@gmail.com。
 
 # 参考
 - [知乎 《双层Transformer辅以连贯性建模用于文本分割》阅读笔记](https://zhuanlan.zhihu.com/p/108775768)
