@@ -5,7 +5,7 @@ baseurl:
 url: http://gongenbo.github.io
 date_format: "ordinal"
 title: 巩恩伯
-subtitle: "Keep the faith!"
+subtitle: "专注是最好的修行"
 description: "巩恩伯的博客"
 keywords: 巩恩伯
 favicon: /favicon.ico
@@ -97,9 +97,9 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_language_keywords: [C++, Golang]
-skill_data_science_keywords: [Hadoop, Spark, MapReduce, Hive]
-skill_machine_learning_keywords: [推荐, NLP]
+skill_language_keywords: [Java, Scala, Python, C++]
+skill_data_science_keywords: [Spark, Flink, SQL]
+skill_machine_learning_keywords: [推荐, LLM]
 # 组件配置
 components:
   # 不蒜子访问统计

@@ -12,8 +12,6 @@ permalink: /about/
 
 * GitHub：[@gongenbo](https://github.com/gongenbo)
 * 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@巩大星](http://weibo.com/enbo)
-* E-mail: `python -c "print('%s@gmail.com'%('gongenbo'))"`
 
 ## 技能关键词
 
