@@ -32,11 +32,11 @@ keywords: 强化学习,多臂老虎机,UCB
 
 现在我们给出科学的定义。
 
-一个伯努利多臂赌博机可以描述为一个元组 $\langle \mathcal{A}, \mathcal{R} \rangle$，其中：
+一个伯努利多臂赌博机可以描述为一个元组 $$\langle \mathcal{A}, \mathcal{R} \rangle$$，其中：
 
 - 我们有 $K$ 个机器，每个机器的奖励概率为 $\{\theta_1, \dots, \theta_K\}$。 
 - 在每个时间步 $t$，我们对一个老虎机采取动作 $a$ 并获得奖励 $r$。
-- $\mathcal{A}$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励， $$Q(a) = \mathbb{E}[r|a] = \theta$$。 如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
+- $\mathcal{A}$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励， $$Q(a) = \mathbb{E}[r\|a] = \theta$$。 如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
 - $\mathcal{R}$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
 
 它是[马尔可夫决策过程](https://en.wikipedia.org/wiki/Markov_decision_process)的简化版本，因为没有状态 $\mathcal{S}$。
@@ -156,7 +156,7 @@ $$
 \pi(a|h_t) = \mathbb{P} \left[ Q(a) > Q(a'), \forall a' \neq a | h_t \right] = \mathbb{E}[R|h_t] \mathbb{1}(a = \arg\max_{a \in \mathcal{A}} Q(a))
 $$
 
-其中，$$\pi(a|h_t)$$ 是给定历史 $h_t$ 选择动作 $a$ 的概率。
+其中，$$\pi(a\|h_t)$$ 是给定历史 $h_t$ 选择动作 $a$ 的概率。
 
 对于伯努利赌博机，假设 $Q(a)$ 遵循[Beta](https://en.wikipedia.org/wiki/Beta_distribution)分布是很自然的，因为 $Q(a)$ 本质上是[伯努利分布](https://en.wikipedia.org/wiki/Bernoulli_distribution)中的成功概率 $\theta$。Beta(α,β)的值在区间 $[0, 1]$ 内；α 和 β 分别对应我们**成功**和**失败**获得奖励的次数。
 
@@ -195,7 +195,7 @@ $$
 
 ## 参考
 
-[1] 翻译自：[The Multi-Armed Bandit Problem and Its Solutions]https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/
+[1] 翻译自：[The Multi-Armed Bandit Problem and Its Solutions](https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/)
 
 [2] [PR Reasoning Ⅱ：Bandit问题与 UCB / UCT / AlphaGo](https://zhuanlan.zhihu.com/p/218398647).
 
