@@ -58,13 +58,9 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 $$\theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i$$
 
-$$Q(a) = \mathbb{E}[r\|a] = \theta$$
 
 $$Q(a) = \mathbb{E}[r|a] = \theta$$
 
-$$Q(a) = \mathbb{E}\[r|a\] = \theta$$
-
-$Q(a) = \mathbb{E}\[r|a\] = \theta$
 
 ### 方法2：使用在线转换工具
 1. [在线HTML 转换为 Markdown](https://devtool.tech/html-md)
