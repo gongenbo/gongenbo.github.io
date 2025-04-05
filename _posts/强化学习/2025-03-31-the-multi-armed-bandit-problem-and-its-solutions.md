@@ -6,9 +6,9 @@ description: 多臂老虎机问题及其解决方案
 keywords: 强化学习,多臂老虎机,UCB
 ---
 
-## 探索与探索的权衡
+## 利用与探索的权衡
 
-探索与探索的困境存在于我们生活的许多方面。例如，你最喜欢的餐馆就在拐角处。如果你每天去那里，你会知道自己能得到什么，但错过了发现更好的机会。如果你总是尝试新地方，很可能你会经常吃到不太好吃的食物。类似地，在线广告商也试图平衡已知的最吸引人的广告和可能更成功的新广告。
+利用与探索的困境存在于我们生活的许多方面。例如，你最喜欢的餐馆就在拐角处。如果你每天去那里，你会知道自己能得到什么，但错过了发现更好的机会。如果你总是尝试新地方，很可能你会经常吃到不太好吃的食物。类似地，在线广告商也试图平衡已知的最吸引人的广告和可能更成功的新广告。
 
 ![img](https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/exploration_vs_exploitation.png)
 
@@ -34,12 +34,10 @@ keywords: 强化学习,多臂老虎机,UCB
 
 一个伯努利多臂赌博机可以描述为一个元组 $\langle \mathcal{A}, \mathcal{R} \rangle$，其中：
 
-- 我们有 $K$ 个机器，每个机器的奖励概率为 $\{\theta_1, \dots, \theta_K\}$。
+- 我们有 $K$ 个机器，每个机器的奖励概率为 $\{\theta_1, \dots, \theta_K\}$。 
 - 在每个时间步 $t$，我们对一个老虎机采取动作 $a$ 并获得奖励 $r$。
-
-- $$\mathcal{A}$$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励，$Q(a) = \mathbb{E}[r|a] = \theta$。如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $$Q(a_t) = \theta_i$$。
-
-- $$\mathcal{R}$$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
+- $\mathcal{A}$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励， $$Q(a) = \mathbb{E}[r|a] = \theta$$。 如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
+- $\mathcal{R}$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
 
 它是[马尔可夫决策过程](https://en.wikipedia.org/wiki/Markov_decision_process)的简化版本，因为没有状态 $\mathcal{S}$。
 
@@ -54,7 +52,7 @@ $$
 我们的损失函数是我们未选择最佳动作而造成的总后悔：
 
 $$
-\mathcal{L}_T = \mathbb{E} \left[ \sum_{t=1}^T (\theta^{\*} - Q(a_t)) \right]
+\mathcal{L}_T = \mathbb{E} \left[ \sum_{t=1}^T (\theta^{*} - Q(a_t)) \right]
 $$
 
 ## 赌博机策略
@@ -75,7 +73,9 @@ $$
 
 其中，$\mathbb{1}$ 是二进制指示函数，$N_t(a)$ 表示动作 $a$ 已经被选择的次数，$N_t(a) = \sum_{\tau=1}^t \mathbb{1}[a_\tau = a]$。
 
-根据ε-贪婪算法，给定小概率 $\epsilon$，我们会随机选择一个动作；但大多数时间（即概率为 $1-\epsilon$），我们选择我们目前学到的最好的动作：$\hat{a}^{\*}_t = \arg\max_{a \in \mathcal{A}} \hat{Q}_t(a)$。
+根据ε-贪婪算法，给定小概率 $\epsilon$，我们会随机选择一个动作；但大多数时间（即概率为 $1-\epsilon$），我们选择我们目前学到的最好的动作：
+
+$$\hat{a}^{*}_t = \arg\max_{a \in \mathcal{A}} \hat{Q}_t(a)$$
 
 你可以查看我的[玩具实现](https://github.com/lilianweng/multi-armed-bandit/blob/master/solvers.py#L45)。
 
@@ -156,7 +156,7 @@ $$
 \pi(a|h_t) = \mathbb{P} \left[ Q(a) > Q(a'), \forall a' \neq a | h_t \right] = \mathbb{E}[R|h_t] \mathbb{1}(a = \arg\max_{a \in \mathcal{A}} Q(a))
 $$
 
-其中，$\pi(a|h_t)$ 是给定历史 $h_t$ 选择动作 $a$ 的概率。
+其中，$$\pi(a|h_t)$$ 是给定历史 $h_t$ 选择动作 $a$ 的概率。
 
 对于伯努利赌博机，假设 $Q(a)$ 遵循[Beta](https://en.wikipedia.org/wiki/Beta_distribution)分布是很自然的，因为 $Q(a)$ 本质上是[伯努利分布](https://en.wikipedia.org/wiki/Bernoulli_distribution)中的成功概率 $\theta$。Beta(α,β)的值在区间 $[0, 1]$ 内；α 和 β 分别对应我们**成功**和**失败**获得奖励的次数。
 
