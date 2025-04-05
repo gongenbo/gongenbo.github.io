@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 《机器学习》周志华思维导图笔记
-categories: [machinelearning]
-description: 周志华机器学习思维导图笔记
-keywords: 周志华,机器学习,思维导图,笔记
+title: 多臂老虎机问题及其解决方案
+categories: [强化学习]
+description: 多臂老虎机问题及其解决方案
+keywords: 强化学习,多臂老虎机,UCB
 ---
 
 # 多臂赌博机问题及其解决方案
