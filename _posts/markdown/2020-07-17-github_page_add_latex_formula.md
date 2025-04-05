@@ -53,12 +53,13 @@ $${|\left|x\right||}_p={(\sum_{i}{|x_i|}_p)}^\frac{1}{p}$$
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 ### github page中latex公式渲染
 - 1:
-  $$\theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i$$
+- $$\theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i$$
 - 2:
-  \theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i
+- \theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i
 - 3:
-  θ∗=Q(a∗)=maxa∈AQ(a)=max1≤i≤Kθi
+- θ∗=Q(a∗)=maxa∈AQ(a)=max1≤i≤Kθi
 - 4:
+- $\theta^{*}=Q(a^{*})=\max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i$
 ## 参考
 [How to support latex in github-pages?](https://stackoverflow.com/questions/26275645/how-to-support-latex-in-github-pages)
 
