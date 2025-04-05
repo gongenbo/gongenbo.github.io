@@ -37,8 +37,10 @@ keywords: 强化学习,多臂老虎机,UCB
 - 我们有 $K$ 个机器，每个机器的奖励概率为 $\{\theta_1, \dots, \theta_K\}$。 
 - 在每个时间步 $t$，我们对一个老虎机采取动作 $a$ 并获得奖励 $r$。
 - $\mathcal{A}$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励， 
+
 $$Q(a) = \mathbb{E}[r|a] = \theta$$
-。 如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
+
+如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
 - $\mathcal{R}$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
 
 它是[马尔可夫决策过程](https://en.wikipedia.org/wiki/Markov_decision_process)的简化版本，因为没有状态 $\mathcal{S}$。
