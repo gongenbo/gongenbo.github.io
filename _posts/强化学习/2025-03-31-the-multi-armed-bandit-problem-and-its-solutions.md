@@ -6,8 +6,6 @@ description: 多臂老虎机问题及其解决方案
 keywords: 强化学习,多臂老虎机,UCB
 ---
 
-# 多臂赌博机问题及其解决方案
-
 ## 探索与探索的权衡
 
 探索与探索的困境存在于我们生活的许多方面。例如，你最喜欢的餐馆就在拐角处。如果你每天去那里，你会知道自己能得到什么，但错过了发现更好的机会。如果你总是尝试新地方，很可能你会经常吃到不太好吃的食物。类似地，在线广告商也试图平衡已知的最吸引人的广告和可能更成功的新广告。
@@ -38,8 +36,10 @@ keywords: 强化学习,多臂老虎机,UCB
 
 - 我们有 $K$ 个机器，每个机器的奖励概率为 $\{\theta_1, \dots, \theta_K\}$。
 - 在每个时间步 $t$，我们对一个老虎机采取动作 $a$ 并获得奖励 $r$。
-- $\mathcal{A}$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励，$Q(a) = \mathbb{E}[r|a] = \theta$。如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $Q(a_t) = \theta_i$。
-- $\mathcal{R}$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
+
+- $$\mathcal{A}$$ 是一个动作集，每个动作指代与一个老虎机的交互。动作 $a$ 的值是预期奖励，$Q(a) = \mathbb{E}[r|a] = \theta$。如果时间步 $t$ 的动作 $a_t$ 在第 $i$ 个机器上，那么 $$Q(a_t) = \theta_i$$。
+
+- $$\mathcal{R}$$ 是奖励函数。在伯努利赌博机的情况下，我们以*随机*的方式观察奖励 $r$。在时间步 $t$，$r_t = \mathcal{R}(a_t)$ 可能以概率 $Q(a_t)$ 返回奖励 1，或者返回 0。
 
 它是[马尔可夫决策过程](https://en.wikipedia.org/wiki/Markov_decision_process)的简化版本，因为没有状态 $\mathcal{S}$。
 
@@ -48,7 +48,7 @@ keywords: 强化学习,多臂老虎机,UCB
 最优奖励概率 $\theta^{\*}$ 对应最优动作 $a^{\*}$ 是：
 
 $$
-\theta^{\*} = Q(a^{\*}) = \max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i
+\theta^{*} = Q(a^{*}) = \max_{a \in \mathcal{A}} Q(a) = \max_{1 \leq i \leq K} \theta_i
 $$
 
 我们的损失函数是我们未选择最佳动作而造成的总后悔：
@@ -193,8 +193,10 @@ $$
 
 ------
 
-# 参考
+## 参考
+
 [1] 翻译自：[The Multi-Armed Bandit Problem and Its Solutions]https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/
+
 [2] [PR Reasoning Ⅱ：Bandit问题与 UCB / UCT / AlphaGo](https://zhuanlan.zhihu.com/p/218398647).
 
 
