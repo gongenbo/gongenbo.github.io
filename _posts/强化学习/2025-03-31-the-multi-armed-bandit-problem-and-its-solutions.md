@@ -205,7 +205,9 @@ $$
 
 [1] 翻译自：[The Multi-Armed Bandit Problem and Its Solutions](https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/)
 
-[2] [PR Reasoning Ⅱ：Bandit问题与 UCB / UCT / AlphaGo](https://zhuanlan.zhihu.com/p/218398647).
+[2] 多臂老虎机beta分布与汤姆森采样参考：[小孩都看得懂的多臂老虎机和汤姆森采样](https://cloud.tencent.com/developer/article/1853831)
+
+[3] [PR Reasoning Ⅱ：Bandit问题与 UCB / UCT / AlphaGo](https://zhuanlan.zhihu.com/p/218398647).
 
 
 
