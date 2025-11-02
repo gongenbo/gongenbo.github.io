@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 构建微服务：Spring boot入门篇
-categories: Java
+categories: java
 description: 构建微服务：Spring boot入门篇
 keywords: Spring boot, 微服务
 ---

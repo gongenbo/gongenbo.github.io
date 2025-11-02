@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用shell的nologin禁止用户登录
-categories: Linux
+categories: linux
 description: 使用shell的nologin禁止用户登录
 keywords: keyword1, keyword2
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark Streaming 实时join
-categories: [Spark]
+categories: [spark]
 description: Spark Sttreaming join
 keywords: spark streaming,join
 ---

@@ -209,6 +209,6 @@ $$
 
 [3] [PR Reasoning Ⅱ：Bandit问题与 UCB / UCT / AlphaGo](https://zhuanlan.zhihu.com/p/218398647).
 
-
+[4] [UCB算法（帮助做出最优选择的算法）](https://www.cnblogs.com/tompaper7-/p/18403553)
 
 

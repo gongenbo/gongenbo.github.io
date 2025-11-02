@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python入门：读取文件解析json
-categories: Python
+categories: python
 description: python入门：读取文件解析json
 ---
 ## 使用场景

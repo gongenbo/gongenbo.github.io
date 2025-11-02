@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark Streaming checkpoint机制
-categories: [Spark]
+categories: [spark]
 description: Spark Streaming checkpoint
 keywords: spark streaming,checkpoint
 ---
