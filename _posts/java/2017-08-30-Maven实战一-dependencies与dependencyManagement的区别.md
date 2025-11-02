@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maven实战--- dependencies与dependencyManagement
-categories: Java
+categories: java
 description: Maven实战--- dependencies与dependencyManagement的区别
 keywords: maven, dependencyManagement
 ---

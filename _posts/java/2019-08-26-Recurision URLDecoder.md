@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recurision URLDecoder IllegalArgumentException's Solution
-categories: Java
+categories: java
 description: IllegalArgumentException URLDecoder
 ---
 ## Proble description

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: shell中使用sort -u与uniq快速去重
-categories: Linux
+categories: linux
 description: shell中使用sort -u与uniq快速去重
 keywords: sort, uniq
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: shell中使用grep比较两个文件的异同
-categories: Linux
+categories: linux
 description: shell中使用grep比较两个文件的异同
 keywords: sort, uniq
 ---

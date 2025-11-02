@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark Streaming实现exactly once
-categories: [Spark]
+categories: [spark]
 description: Spark Streaming exactly once
 keywords: spark streaming,exactly once
 ---
